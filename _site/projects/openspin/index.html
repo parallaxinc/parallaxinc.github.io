@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>OpenSpin - developers.parallax.com</title>
+    
+    <meta name="author" content="Parallax, Inc.">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/bootstrap-3/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/pygments/default.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <!-- Update these with your own images
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.png" /><br />
+          <span style="letter-spacing: 2.5px; font-size:90%">developers.parallax.com</span>
+        </a>
+      </div>
+
+      <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+            <ul class="nav navbar-nav">
+              
+              
+              
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Projects</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+      </div>
+
+      <div class="container">
+        
+<div class="page-header">
+  <h1>OpenSpin  <small>an open-source compiler for the Spin language</small></h1>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    
+<ol class="breadcrumb">
+  
+    
+      
+        <li><a href="/">Home</a></li>
+      
+  
+    
+      
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+      
+  
+    
+      
+        
+          <li class="active">OpenSpin</li>
+        
+      
+  
+</ol>
+
+
+<ul class="pager">
+
+</ul>
+<p>OpenSpin is an open source compiler for the Spin/PASM language of the Parallax Propeller. It was ported from Chip Gracey’s original x86 assembler code.</p>
+
+<p>There is a solution/project files for VS 2008, and there are make files for use with GCC. Tested on MinGW, linux, and Mac OSX so far. It should work with any recent version of GCC. I’ve compiled with GCC 4.6 and 4.8.</p>
+
+<p>They build the PropellerCompiler library and openspin.exe.</p>
+
+<p>The code successfully compiles all of the Library files shipped with PropTool as well as all of the files available in the OBEX as of August 2012. That’s approximately 1450 spin files.</p>
+
+<p>The only binary differences are from the corrected handling of floating point numbers (which is now IEEE compliant).</p>
+
+<p>As of version r41, it supports a basic <a href="https://github.com/reltham/OpenSpin/wiki/Preprocessor">preprocessor</a>.</p>
+
+<h2 id="propellercompiler-library">PropellerCompiler library</h2>
+
+<p>PropellerCompiler.cpp/h contain the interface to the compiler. Look at openspin.cpp for an example of how to work with the interface.</p>
+
+<h2 id="openspinexe">openspin.exe</h2>
+
+<p>openspin.exe is a command line wrapper for the compiler library. You give it a spin file and it passes it through the compiler and produces a .binary (or optional .eeprom) file with the same base name as the passed in spin file. There are several <a href="https://github.com/reltham/OpenSpin/wiki/CommandLine">command line options</a> available. Run openspin.exe with no arguments to get a usage description.</p>
+
+<h2 id="binary-downloads">Binary Downloads</h2>
+
+<p><a href="https://github.com/reltham/OpenSpin/wiki/Downloads">Binary build downloads are available.</a></p>
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p>&copy; 2015 <a href="http://www.parallax.com">Parallax, Inc.</a>
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </div>
+    </div>
+
+    
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

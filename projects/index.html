@@ -1,0 +1,34 @@
+---
+layout: page
+group: navigation
+title: Projects
+permalink: /projects/
+apptypes: tools|languages|other
+---
+
+{% include breadcrumbs %}
+
+{% assign apptype_array = page.apptypes | split: "|" %}
+
+{% for apptype in apptype_array %}
+  <h3 id="{{ apptype }}">{{ apptype | capitalize }}</h3>
+  <hr>
+  {% for page in site.pages %}
+    {% if page.apptype == apptype and page.type == 'project' %}
+    <div class="row">
+      <div class="col-md-6">
+        {% if page.image %}
+        <a href="{{ page.url }}"><img class="img-responsive" src="{{ page.url }}/{{ page.image }}" alt=""></a>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        <h3>{{ page.title }}</h3>
+        <h4>{{ page.tagline }}</h4>
+        <p>{{ page.excerpt }}</p>
+        <a class="btn btn-primary" href="{{ page.url }}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+    <hr>
+    {% endif %}
+  {% endfor %}
+{% endfor %}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>developers.parallax.com</title>
+ <link href="http://parallaxinc.github.io/" rel="self"/>
+ <link href="http://parallaxinc.github.io"/>
+ <updated>2015-02-06T05:16:27-08:00</updated>
+ <id>http://parallaxinc.github.io</id>
+ <author>
+   <name>Parallax, Inc.</name>
+   <email>support@parallax.com</email>
+ </author>
+
+ 
+ 
+</feed>
