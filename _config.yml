@@ -8,8 +8,8 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : dev.parallax.com
-tagline: The home of Parallax open-source developer
+title : developers.parallax.com
+tagline: The home of Parallax open-source development
 author :
   name : Parallax, Inc.
   website : http://www.parallax.com
