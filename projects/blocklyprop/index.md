@@ -25,10 +25,13 @@ links:
   <div class="portfolio-item col-sm-8 col-md-8">
     <h2>About</h2>
     <p class="lead">BlocklyProp is a small, easy, and lightweight program that runs online and allows the beginner to easily program the Propeller with little to no programming experience required.</p>
+    <a class="btn btn-default btn-lg" href="http://blocklyprop.creatingfuture.eu/index.html">Try {{ page.title }} now!</a>
   </div>
   <div class="portfolio-item col-sm-4 col-md-4">
   </div>
 </div>
+
+<br/>
 
 <div class="row">
   <div class="portfolio-item col-sm-4 col-md-4"> <img class="img-responsive" src="images/draganddrop.png">
