@@ -39,7 +39,7 @@ links:
     <h3>Designed for the Propeller</h3>
     <p>Only blocks that are compatible have been added to BlocklyProp, and everything has been tested to ensure the highest quality product for the user.</p>
   </div>
-  <div class="portfolio-item col-sm-4 col-md-4"> <img class="img-responsive" src="images/kenscomp.jpg">
+  <div class="portfolio-item col-sm-4 col-md-4"> <img class="img-responsive" src="images/computer.jpg">
     <h3>Drag-and-drop on any computer</h3>
     <p>A lightweight system means multi-platform support; program the Propeller on any of your computers!</p>
   </div>
