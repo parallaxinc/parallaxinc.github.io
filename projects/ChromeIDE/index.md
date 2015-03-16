@@ -11,6 +11,11 @@ program: ChromeIDE
 version: 1.0.0.4
 image: images/chromeIDE-launched.png
 
+links:
+    Source Code: https://github.com/parallaxinc/ChromeIDE
+    Issue Tracker: https://github.com/parallaxinc/ChromeIDE/issues
+    Change Log: https://github.com/parallaxinc/ChromeIDE/releases
+
 ---
 
 <div class="row">
