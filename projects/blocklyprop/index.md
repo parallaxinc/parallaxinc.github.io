@@ -48,4 +48,50 @@ links:
   </div>
 </div>
 
+<div class="row">
+    <div class="portfolio-item col-sm-8 col-md-8">
+        <h2>Roadmap</h2>
+        <p>Currently, BlocklyProp is still at the beginning of its development. Below is a roadmap for each different feature.</p>
+    </div>
+</div>
 
+<div class="row">
+    <div class="portfolio-item col-sm-8 col-md-8">
+        <h3>BASIC Stamp Support ( not in any particular order )</h3>
+        <ul>
+            <li>Add the tokenizer</li>
+            <li>Add blocks</li>
+            <li>Add documentation</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="portfolio-item col-sm-8 col-md-8">
+        <h3>Code to Blocks autoconverter</h3>
+        <ul>
+            <li>Spin converter</li>
+            <li>C converter</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="portfolio-item col-sm-8 col-md-8">
+        <h3>IOS Support</h3>
+        <ul>
+            <li>Downloader/Compiler</li>
+            <li>Mobile version of BlocklyProp</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="portfolio-item col-sm-8 col-md-8">
+        <h3>Android Support</h3>
+        <ul>
+            <li>Mobile version of BlocklyProp</li>
+            <li>Downloader/Compiler</li>
+        </ul>
+    </div>
+</div>

@@ -67,4 +67,9 @@ platforms:
   </div>
 </div>
 
-
+<div class="row">
+    <div class="portfolio-item col-sm-8 col-md-8">
+        <h2>Roadmap</h2>
+        <p>NOTE: Roadmap is still being developed for PropellerIDE. Please check back at a later time</p>
+    </div>
+</div>

@@ -38,3 +38,8 @@ Binary Downloads
 ----------------
 
 [Binary build downloads are available.](https://github.com/reltham/OpenSpin/wiki/Downloads)
+
+Roadmap
+-------
+
+NOTE: Roadmap is still being developed for OpenSpin. Please check back at a later time
