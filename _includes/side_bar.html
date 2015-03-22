@@ -1,0 +1,15 @@
+<div id="sidebar" class="col-sm-4 col-md-4">
+    <aside class="widget">
+        <h3>Posts</h3>
+        <ul class="media-list">
+        {% for post in site.posts %}
+            <li class="media">
+                <a href="{{ post.url }}" class="media-photo" style="background-image:url({{ post.image}})"></a>
+                <a href="{{ post.url }}" class="media-date">{{ post.date | date: "%-d" }}<span>{{ post.date | date: "%b" }}</span></a>
+                <h5 class="media-heading"><a href="{{ post.url }}">{{ post.title | truncate: 20 }}</a></h5>
+                <p size="5pt">{{ post.excerpt | truncate: 80 }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+    </aside>
+</div>
