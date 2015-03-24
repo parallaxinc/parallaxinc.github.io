@@ -17,6 +17,16 @@
 h1, h2, h3, h4 {
   color: #002942;
 }
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 10px;
+    color: grey;
+}
+
 #footer {
   background-color: #002642;
   color: #FFFFFF;

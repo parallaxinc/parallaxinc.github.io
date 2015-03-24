@@ -1,9 +1,9 @@
 ---
 layout: post
-title: First Post
+title: Third Post
 published: true
-tags: BlocklyProp
-category: tool
+tags: PropellerIDE
+category: IDE
 image: /images/favicon.ico
 ---
 

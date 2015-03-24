@@ -1,9 +1,9 @@
 ---
 layout: post
-title: First Post
+title: Second Post
 published: true
-tags: BlocklyProp
-category: tool
+tags: ChromeIDE
+category: IDE
 image: /images/favicon.ico
 ---
 
