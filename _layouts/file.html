@@ -1,0 +1,9 @@
+---
+layout: page
+---
+
+{{ content }}
+{% unless include_file %}
+  {% assign include_file = "README.md" %}
+{% endunless %}
+{% include include_file.html %}
