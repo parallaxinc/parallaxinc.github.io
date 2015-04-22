@@ -11,7 +11,7 @@ apptype: tools
 
 program: PropellerIDE
 repo: https://github.com/parallaxinc/PropellerIDE/releases
-version: 0.25.1
+version: 0.30.0
 image: images/main_crop.png
 
 links:
@@ -21,27 +21,28 @@ links:
 
 platforms:
   -  name: Windows
-     suffix: win-setup.exe
-     version: '0.25.1'
-     versionlong: '0.25.1-0-g5442b03'
+     suffix: amd64.exe
+     version: '0.30.0'
+     versionlong: '0.30.0'
 
   -  name: Mac OS X
      suffix: amd64.dmg
-     version: '0.25.1'
-     versionlong: '0.25.1-0-g5442b03'
+     version: '0.30.0'
+     versionlong: '0.30.0'
 
   -  name: Linux
      suffix: amd64.deb
-     version: '0.25.1'
-     versionlong: '0.25.1-0-g5442b03'
+     version: '0.30.0'
+     versionlong: '0.30.0'
 
   -  name: Raspberry Pi
      suffix: armhf.deb
-     version: '0.25.0'
-     versionlong: '0.25.0-0-g6710db9'
+     version: '0.30.0'
+     versionlong: '0.30.0'
 
 ---
 
+![](images/embedded1.png){:.img-responsive}
 
 <div class="row">
   <div class="portfolio-item col-sm-8 col-md-8">
@@ -65,11 +66,4 @@ platforms:
     <h3>Propeller anywhere</h3>
     <p>A minimal footprint means new platforms; program the Propeller on your Raspberry Pi!</p>
   </div>
-</div>
-
-<div class="row">
-    <div class="portfolio-item col-sm-8 col-md-8">
-        <h2>Roadmap</h2>
-        <p>NOTE: Roadmap is still being developed for PropellerIDE. Please check back at a later time</p>
-    </div>
 </div>
