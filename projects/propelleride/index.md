@@ -12,7 +12,7 @@ apptype: tools
 program: PropellerIDE
 repo: https://github.com/parallaxinc/PropellerIDE/releases
 version: 0.30.0
-image: images/main_crop.png
+image: images/embedded1.png
 
 links:
   Source Code: https://github.com/parallaxinc/PropellerIDE
