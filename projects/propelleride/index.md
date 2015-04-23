@@ -22,15 +22,15 @@ links:
 platforms:
   -  name: Windows
      suffix: amd64.exe
-     version: '0.30.0'
+     version: '0.30.1'
 
   -  name: Mac OS X
      suffix: amd64.dmg
-     version: '0.30.0'
+     version: '0.30.1'
 
   -  name: Linux
      suffix: amd64.deb
-     version: '0.30.0'
+     version: '0.30.1'
 
   -  name: Raspberry Pi
      suffix: armhf.deb
