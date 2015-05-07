@@ -1,3 +1,6 @@
 [submodule "projects/propgcc"]
 	path = projects/propgcc
 	url = https://github.com/parallaxinc/propeller-gcc-docs.git
+[submodule "projects/propellermanager"]
+	path = projects/propellermanager
+	url = https://github.com/parallaxinc/PropellerManager
