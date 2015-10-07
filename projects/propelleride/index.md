@@ -11,7 +11,7 @@ apptype: tools
 
 program: PropellerIDE
 repo: https://github.com/parallaxinc/PropellerIDE/releases
-version: 0.30.0
+version: 0.32.0
 image: images/embedded1.png
 
 links:
@@ -22,19 +22,19 @@ links:
 platforms:
   -  name: Windows
      suffix: amd64.exe
-     version: '0.30.1'
+     version: '0.32.0'
 
   -  name: Mac OS X
      suffix: amd64.dmg
-     version: '0.30.1'
+     version: '0.32.0'
 
   -  name: Linux
      suffix: amd64.deb
-     version: '0.30.1'
+     version: '0.32.0'
 
   -  name: Raspberry Pi
      suffix: armhf.deb
-     version: '0.30.1'
+     version: '0.32.0'
 
 ---
 
