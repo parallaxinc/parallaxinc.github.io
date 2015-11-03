@@ -1,11 +1,12 @@
 ---
 layout: project
-permalink: /projects/openspin/
 title: OpenSpin
+permalink: /projects/openspin/
+
 tagline: an open-source compiler for the Spin language
 
 type: project
-apptype: languages
+apptype: compilers
 
 program: OpenSpin
 version: 0.25.1

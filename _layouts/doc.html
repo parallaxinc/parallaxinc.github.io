@@ -1,5 +1,13 @@
 ---
-layout: page
+layout: default
 ---
+{% include JB/setup %}
+<div class="page-header">
+    <a href="{{ page.docurl }}"><h1>{{ page.doctitle }} {% if page.doctagline %} <small>{{ page.doctagline }}</small>{% endif %}</h1></a>
+</div>
 
-{{ content }}
+<div class="row">
+  <div class="col-xs-12">
+    {{ content }}
+  </div>
+</div>

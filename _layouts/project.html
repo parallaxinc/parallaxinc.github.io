@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+{% assign breadcrumb_array = page.url | split: "/" %}
 {% include breadcrumbs %}
 {% include links %}
 {{ content }}

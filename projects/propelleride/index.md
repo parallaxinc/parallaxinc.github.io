@@ -1,7 +1,8 @@
 ---
 layout: project
-permalink: /projects/propelleride/
 title: PropellerIDE
+permalink: /projects/propelleride/
+
 tagline: a simple, fun programming environment for the Propeller
 excerpt: PropellerIDE is a clean, cross-platform environment for Propeller Spin development.
          Write Spin code, download programs to your Propeller board, and debug your applications with the built-in serial terminal.
@@ -41,11 +42,9 @@ platforms:
 ![](images/embedded1.png){:.img-responsive}
 
 <div class="row">
-  <div class="portfolio-item col-sm-8 col-md-8">
+  <div class="portfolio-item col-sm-12 col-md-12">
     <h2>About</h2>
-    <p class="lead">PropellerIDE is a clean, cross-platform environment for Propeller Spin development. Write Spin code, download programs to your Propeller board, and debug your applications with the built-in serial terminal.</p>
-  </div>
-  <div class="portfolio-item col-sm-4 col-md-4">
+    <p class="lead">{{ page.excerpt }}</p>
   </div>
 </div>
 

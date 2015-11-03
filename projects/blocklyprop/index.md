@@ -1,7 +1,8 @@
 ---
 layout: project
-permalink: /projects/blocklyprop/
 title: BlocklyProp
+permalink: /projects/blocklyprop/
+
 tagline: an easy way to get an introduction to the propeller microcontroller
 excerpt: BlocklyProp is a small, easy, and lightweight program that runs online and allows the beginner to easily program the Propeller with little to no programming experience required.
 

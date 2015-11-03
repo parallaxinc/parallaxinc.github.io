@@ -1,34 +1,77 @@
 ---
-layout: page
+layout: project 
 group: navigation
 title: Projects
 permalink: /projects/
-apptypes: tools|languages|other
+apptypes: tools|compilers|libraries
 ---
-
-{% include breadcrumbs %}
-
 {% assign apptype_array = page.apptypes | split: "|" %}
 
-{% for apptype in apptype_array %}
-  <h3 id="{{ apptype }}">{{ apptype | capitalize }}</h3>
-  <hr>
-  {% for page in site.pages %}
-    {% if page.apptype == apptype and page.type == 'project' %}
-    <div class="row">
-      <div class="col-md-6">
-        {% if page.image %}
-        <a href="{{ page.url }}"><img class="img-responsive" src="{{ page.url }}/{{ page.image }}" alt=""></a>
-        {% endif %}
+<div class="row">
+
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">All Projects</h3>
       </div>
-      <div class="col-md-6">
-        <h3>{{ page.title }}</h3>
-        <h4>{{ page.tagline }}</h4>
-        <p>{{ page.excerpt }}</p>
-        <a class="btn btn-primary" href="{{ page.url }}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+      <div class="panel-body">
+      {% for apptype in apptype_array %}
+        <h3><a href="#{{ apptype }}">{{ apptype | capitalize }}</a></h3>
+        <ul class="nav">
+
+        {% for page in site.pages %}
+          {% if page.apptype == apptype and page.type == 'project' %}
+          <li><h5><a href="{{ page.url }}">{{ page.title }}</a></h5></li>
+          {% endif %}
+        {% endfor %}
+
+        </ul>
+      {% endfor %}
+          </div>
       </div>
-    </div>
+  </div>
+
+  <div class="col-md-9">
+  {% for apptype in apptype_array %}
+    <h1 id="{{ apptype }}">{{ apptype | capitalize }}</h1>
     <hr>
+    {% assign loopindex = 0 %}
+    {% assign divopen = false %}
+
+    {% for page in site.pages %}
+      {% if page.apptype == apptype and page.type == 'project' %}
+        {% assign loopindex = loopindex | plus: 1 %}
+        {% assign rowfinder = loopindex | modulo: 2 %}
+
+        {% if rowfinder == 1 %}
+          <div class="row">
+          {% assign divopen = true %}
+        {% endif %}
+
+          <div class="col-md-6">
+            <a href="{{ page.url }}">
+            <h3>{{ page.title }}</h3>
+            </a>
+            <h4>{{ page.tagline }}</h4>
+            {% if page.image %}
+              <a href="{{ page.url }}">
+              <img class="img-responsive" src="{{ page.url }}/{{ page.image }}" alt="{{ page.image }}" />
+              </a>
+            {% endif %}
+          </div>
+
+        {% if rowfinder == 0 %}
+          </div>
+          {% assign divopen = false %}
+        {% endif %}
+
+      {% endif %}
+    {% endfor %}
+
+    {% if divopen %}
+      </div>
     {% endif %}
+
   {% endfor %}
-{% endfor %}
+  </div>
+</div>
