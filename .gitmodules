@@ -4,3 +4,6 @@
 [submodule "projects/propellermanager"]
 	path = projects/propellermanager
 	url = https://github.com/parallaxinc/PropellerManager
+[submodule "projects/badgehacker"]
+	path = projects/badgehacker
+	url = https://github.com/parallaxinc/BadgeHacker
