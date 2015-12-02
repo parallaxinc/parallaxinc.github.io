@@ -12,19 +12,21 @@
       <h4>Looking for an older version?</h4>
       <p>View the <a href="{{ page.repo }}">release archive</a>.</p>
     </div>
-    <div class="col-sm-8 col-md-8">
+    <div class="col-sm-4 col-md-4">
       <div class="tab-content" id="myTabContent" style="width:100%">
         {% for platform in page.platforms %}
   
           <div role="tabpanel" id="{{ platform.name | remove:' ' }}" class="tab-pane fade {% if forloop.index0 == 0 %}in active{% endif %}">
             <a href="{{ page.repo }}/download/{{ platform.version }}/{{ page.program | downcase }}-{{ platform.version }}-{{ platform.suffix }}" class="btn btn-default btn-lg btn-block">
             <img src="/images/{{ platform.name | remove:' ' }}.png" width="64" height="64" alt="{{ platform.name | remove:' ' }}" class="float-left"/>
-            <h2>Download {{ page.program }} for {{ platform.name }}</h2>
-            <h4><strong>{{ page.program | downcase }}-{{ platform.version }}-{{ platform.suffix }}</strong></h4>
+            <h2>{{ platform.name }}</h2>
+            <!--<p>{{ page.program | downcase }}-{{ platform.version }}-{{ platform.suffix }}</p>-->
             </a>
           </div>
         {% endfor %}
       </div>
+    </div>
+    <div class="col-sm-4 col-md-4">
     </div>
   </div>
 {% endif %}

@@ -1,8 +1,29 @@
 ---
 layout: page
 ---
-{% assign breadcrumb_array = page.url | split: "/" %}
-{% include breadcrumbs %}
-{% include links %}
-{{ content }}
-{% include downloads %}
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h4>More Libraries</h4>
+        <ul class="nav">
+        {% for otherpage in site.pages %}
+          {% if otherpage.apptype == page.apptype and otherpage.type == 'project' %}
+          <li><h5><a href="{{ otherpage.url }}">{{ otherpage.title }}</a></h5></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9">
+    {% assign breadcrumb_array = page.url | split: "/" %}
+    {% include breadcrumbs %}
+    {% include links %}
+    {{ content }}
+    {% include downloads %}
+  </div>
+</div>
+
