@@ -2,7 +2,7 @@
 layout: page
 title: Welcome
 permalink: /
-apptypes: tools|compilers|libraries
+apptypes: tools|compilers|libraries|hardware|other
 tagline: to the new home of Parallax open-source software
 ---
 
@@ -31,9 +31,9 @@ tagline: to the new home of Parallax open-source software
         <h3><a href="#{{ apptype }}">{{ apptype | capitalize }}</a></h3>
         <ul class="nav">
 
-        {% for page in site.pages %}
-          {% if page.apptype == apptype and page.type == 'project' %}
-          <li><h5><a href="{{ page.url }}">{{ page.title }}</a></h5></li>
+        {% for project in site.projects %}
+          {% if project.type == apptype %}
+          <li><h5><a href="{{ project.url }}">{{ project.title }}</a></h5></li>
           {% endif %}
         {% endfor %}
 
@@ -50,8 +50,8 @@ tagline: to the new home of Parallax open-source software
     {% assign loopindex = 0 %}
     {% assign divopen = false %}
 
-    {% for page in site.pages %}
-      {% if page.apptype == apptype and page.type == 'project' %}
+    {% for project in site.projects %}
+      {% if project.type == apptype %}
         {% assign loopindex = loopindex | plus: 1 %}
         {% assign rowfinder = loopindex | modulo: 2 %}
 
@@ -61,13 +61,13 @@ tagline: to the new home of Parallax open-source software
         {% endif %}
 
           <div class="col-md-6">
-            <a href="{{ page.url }}">
-            <h3>{{ page.title }}</h3>
+            <a href="{{ project.url }}">
+            <h3>{{ project.title }}</h3>
             </a>
-            <h4>{{ page.tagline }}</h4>
-            {% if page.image %}
-              <a href="{{ page.url }}">
-              <img class="img-responsive" src="{{ page.url }}/{{ page.image }}" alt="{{ page.image }}" />
+            <h4>{{ project.tagline }}</h4>
+            {% if project.image %}
+              <a href="{{ project.url }}">
+              <img class="img-responsive" src="{{ project.image }}" alt="{{ project.name }}" />
               </a>
             {% endif %}
           </div>

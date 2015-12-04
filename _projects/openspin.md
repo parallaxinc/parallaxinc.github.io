@@ -1,21 +1,17 @@
 ---
-layout: project
 title: OpenSpin
-permalink: /projects/openspin/
-
-tagline: an open-source compiler for the Spin language
-
-type: project
-apptype: compilers
-
-program: OpenSpin
-version: 0.25.1
-
+tagline: Add to github
+links:
+    Code: https://github.com/parallaxinc/OpenSpin
+    Issues: https://github.com/parallaxinc/OpenSpin/issues
+    Releases: https://github.com/parallaxinc/OpenSpin/releases
 ---
+Introduction
+============
 
 OpenSpin is an open source compiler for the Spin/PASM language of the Parallax Propeller. It was ported from Chip Gracey's original x86 assembler code.
 
-There is a solution/project files for VS 2008, and there are make files for use with GCC. Tested on MinGW, linux, and Mac OSX so far. It should work with any recent version of GCC. I've compiled with GCC 4.6 and 4.8.
+There is a solution/project files for VS 2013, and there are make files for use with GCC. Tested on MinGW, linux, and Mac OSX so far. It should work with any recent version of GCC. I've compiled with GCC 4.6 and 4.8.
 
 They build the PropellerCompiler library and openspin.exe.
 
@@ -40,7 +36,10 @@ Binary Downloads
 
 [Binary build downloads are available.](https://github.com/reltham/OpenSpin/wiki/Downloads)
 
-Roadmap
--------
+Thanks
+------
 
-NOTE: Roadmap is still being developed for OpenSpin. Please check back at a later time
+* Thanks to Steve Denson, for the Makefile and testing on linux!
+* Thanks to David Betz for testing on Mac OSX.
+* Thanks to Eric Smith for providing the code and helping with integrating the preprocessor.
+

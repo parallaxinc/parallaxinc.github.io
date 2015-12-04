@@ -128,28 +128,15 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
-exclude:
-- projects/propgcc/binutils
-- projects/propgcc/dejagnu
-- projects/propgcc/demos
-- projects/propgcc/fix-xcode-warnings.sh
-- projects/propgcc/gcc
-- projects/propgcc/gdb
-- projects/propgcc/gdbstub
-- projects/propgcc/gnu-oids.texi
-- projects/propgcc/jbuild.sh
-- projects/propgcc/ldscripts
-- projects/propgcc/lib
-- projects/propgcc/LICENSE.txt
-- projects/propgcc/loader
-- projects/propgcc/Makefile
-- projects/propgcc/ncurses
-- projects/propgcc/newlib
-- projects/propgcc/p2load
-- projects/propgcc/README.cross
-- projects/propgcc/README.gdb
-- projects/propgcc/release
-- projects/propgcc/spin2cpp
-- projects/propgcc/spinsim
-- projects/propgcc/tools
+  #
+collections:
+    projects:
+        output: true
+        permalink: /projects/:path/
+
+defaults:
+    - scope:
+          collection: projects
+      values:
+          layout: project
+          type: other

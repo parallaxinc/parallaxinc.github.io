@@ -1,4 +1,4 @@
-<ul class="pager">
+<ul class="nav nav-pills nav-justified">
 {% for link in page.links %}
   <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
 {% endfor %}
