@@ -132,7 +132,7 @@ JB :
 collections:
     projects:
         output: true
-        permalink: /projects/:path/
+        permalink: /:path/
 
 defaults:
     - scope:

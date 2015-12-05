@@ -1,6 +1,8 @@
 ---
 title: projectview
 tagline: A dynamic project viewer for PropellerIDE
+image: https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/search.png
+type: libraries
 links:
     Code: https://github.com/parallaxinc/projectview
     Issues: https://github.com/parallaxinc/projectview/issues

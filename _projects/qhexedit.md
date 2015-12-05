@@ -1,6 +1,7 @@
 ---
 title: QHexEdit
 tagline: A hex editor widget for Qt5
+type: libraries
 links:
     Code: https://github.com/parallaxinc/QHexEdit
     Releases: https://github.com/parallaxinc/QHexEdit/releases

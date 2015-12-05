@@ -5,6 +5,9 @@ links:
     Code: https://github.com/parallaxinc/Scribbler-2
     Issues: https://github.com/parallaxinc/Scribbler-2/issues
     Releases: https://github.com/parallaxinc/Scribbler-2/releases
+tag_name: v1.5
+tag_url:  https://github.com/parallaxinc/Scribbler-2/releases/tag/v1.5
+platforms:
 ---
 Scribbler
 =========

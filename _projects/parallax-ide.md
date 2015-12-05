@@ -5,6 +5,9 @@ links:
     Code: https://github.com/parallaxinc/Parallax-IDE
     Issues: https://github.com/parallaxinc/Parallax-IDE/issues
     Releases: https://github.com/parallaxinc/Parallax-IDE/releases
+tag_name: v0.10.0
+tag_url:  https://github.com/parallaxinc/Parallax-IDE/releases/tag/v0.10.0
+platforms:
 ---
 # Parallax IDE
 Write, compile, and download code to your Parallax Boe-Bot Robot or custom BASIC Stamp microcontroller-based electronic creations.

@@ -1,9 +1,9 @@
-{% if page.platforms and page.repo %}
+{% if page.platforms %}
   <h2>Downloads</h2>
   <hr>
   <div class="row">
     <div class="col-sm-4 col-md-4">
-      <p>Current version: <a href="{{ page.repo }}/tag/{{ page.version }}">{{ page.version }}</a></p>
+      <p>Current version: <a href="{{ page.tag_url }}">{{ page.tag_name }}</a></p>
       <ul class="nav nav-pills nav-stacked" id="download">
         {% for platform in page.platforms %}
           <li class="{% if forloop.index0 == 0 %}active{% endif %}"><a data-toggle="tab" href="#{{ platform.name | remove:' ' }}">{{ platform.name }}</a></li>
@@ -17,10 +17,10 @@
         {% for platform in page.platforms %}
   
           <div role="tabpanel" id="{{ platform.name | remove:' ' }}" class="tab-pane fade {% if forloop.index0 == 0 %}in active{% endif %}">
-            <a href="{{ page.repo }}/download/{{ platform.version }}/{{ page.program | downcase }}-{{ platform.version }}-{{ platform.suffix }}" class="btn btn-default btn-lg btn-block">
+            <a href="{{ platform.link }}" class="btn btn-default btn-lg btn-block">
             <img src="/images/{{ platform.name | remove:' ' }}.png" width="64" height="64" alt="{{ platform.name | remove:' ' }}" class="float-left"/>
             <h2>{{ platform.name }}</h2>
-            <!--<p>{{ page.program | downcase }}-{{ platform.version }}-{{ platform.suffix }}</p>-->
+            <p>{{ platform.file }}</p>
             </a>
           </div>
         {% endfor %}

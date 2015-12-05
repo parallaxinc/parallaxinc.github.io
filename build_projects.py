@@ -3,21 +3,59 @@
 
 import os, sys
 import shutil
-#import pickle
 import pypandoc
 import yaml
 
 import github
 
-#f = open("bleh.txt")
-#repos = pickle.load(f)
-#f.close()
+
+namehash = {}
+namehash['exe'] = "Windows"
+namehash['dmg'] = "OS X"
+namehash['pkg'] = "OS X"
+namehash['run'] = "Linux"
+namehash['deb'] = "Ubuntu"
+namehash['rpm'] = "Linux"
 
 gh = github.Github()
 org = gh.get_organization("parallaxinc")
 repos = org.get_repos()
 
 print gh.get_rate_limit().rate.remaining
+
+
+def render_releases(repo):
+    output = ""
+    try: 
+        release = repo.get_release_latest()
+    except:
+        return output
+
+    output += u"tag_name: "+release.tag_name+"\n"
+    output += u"tag_url:  "+release.html_url+"\n"
+
+    output += u"platforms:\n"
+    
+    for a in release.assets:
+        ext = os.path.splitext(a.name)[1].replace('.','')
+
+        if ext in namehash.keys():
+
+            platform = u""
+            if ext == 'deb':
+                if 'armhf' in a.name:
+                    platform = "Raspbian"
+                else:
+                    platform = "Ubuntu"
+            else:
+                platform = namehash[ext]
+                    
+                
+            output += "  - name: "+platform+"\n"
+            output += "    link: "+a.browser_download_url+"\n"
+            output += "    file: "+a.name+"\n\n"
+
+    return output
 
 def render_page(repo):
     output = unicode("---\n",'utf8')
@@ -45,11 +83,14 @@ def render_page(repo):
     except:
         pass
 
+
+    # links
     output += "links:\n"
 
     for l in links.keys():
         output += "    "+l+": "+links[l]+"\n"
 
+    output += render_releases(repo)
 
     output += "---\n"
 

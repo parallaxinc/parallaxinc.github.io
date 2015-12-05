@@ -5,6 +5,9 @@ links:
     Code: https://github.com/parallaxinc/BlocklyPropClient
     Issues: https://github.com/parallaxinc/BlocklyPropClient/issues
     Releases: https://github.com/parallaxinc/BlocklyPropClient/releases
+tag_name: v0.2
+tag_url:  https://github.com/parallaxinc/BlocklyPropClient/releases/tag/v0.2
+platforms:
 ---
 BlocklyPropClient
 =======================

@@ -5,6 +5,9 @@ links:
     Code: https://github.com/parallaxinc/OpenSpin
     Issues: https://github.com/parallaxinc/OpenSpin/issues
     Releases: https://github.com/parallaxinc/OpenSpin/releases
+tag_name: 1.00.77
+tag_url:  https://github.com/parallaxinc/OpenSpin/releases/tag/1.00.77
+platforms:
 ---
 Introduction
 ============
