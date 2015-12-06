@@ -8,6 +8,11 @@ import yaml
 
 import github
 
+import argparse
+
+def error(*objs):
+    print ' '.join(objs)
+    sys.exit(1)
 
 namehash = {}
 namehash['exe'] = "Windows"
@@ -17,11 +22,46 @@ namehash['run'] = "Linux"
 namehash['deb'] = "Ubuntu"
 namehash['rpm'] = "Linux"
 
-gh = github.Github()
-org = gh.get_organization("parallaxinc")
+parser = argparse.ArgumentParser(description='Build Jekyll-friendly site content from your Github projects.')
+parser.add_argument('-t','--token', type=str, default=None, help='use this access token for authentication')
+parser.add_argument('org', type=str, metavar='NAME', help='the organization for building your site')
+
+args = parser.parse_args()
+
+if not args.org:
+    error("No organization provided")
+
+gh = github.Github(args.token)
+
+try:
+    org = gh.get_organization(args.org)
+except github.UnknownObjectException:
+    error("Organization",args.org,"not found!")
+except github.BadCredentialsException:
+    error("Bad credentials provided!")
+
 repos = org.get_repos()
 
-print gh.get_rate_limit().rate.remaining
+print "Remaining requests:", gh.get_rate_limit().rate.remaining
+
+
+def render_readme(repo):
+    output = ""
+    try:
+        readme = repo.get_readme()
+    except github.UnknownObjectException:
+        return output
+
+    readmetext = unicode(readme.decoded_content,'utf8')
+    ext = os.path.splitext(readme.name)[1].replace('.','')
+
+    if not ext == 'md':
+        print "Converting",readme.name, ext
+        readmetext = pypandoc.convert(readmetext,'md',format=ext)
+
+    output += readmetext+"\n"
+
+    return output
 
 
 def render_releases(repo):
@@ -91,24 +131,9 @@ def render_page(repo):
         output += "    "+l+": "+links[l]+"\n"
 
     output += render_releases(repo)
-
     output += "---\n"
 
-    # readme
-    try:
-        readme = repo.get_readme()
-        readmetext = unicode(readme.decoded_content,'utf8')
-        ext = os.path.splitext(readme.name)[1].replace('.','')
-
-        if not ext == 'md':
-            print "Converting",readme.name, ext
-            readmetext = pypandoc.convert(readmetext,'md',format=ext)
-
-        output += readmetext+"\n"
-
-    except github.UnknownObjectException:
-#        print "README for",repo.name,"not found"
-        pass
+    output += render_readme(repo)
 
     return output
 
@@ -117,9 +142,16 @@ outpath = '_projects'
 shutil.rmtree(outpath, True)
 os.mkdir(outpath)
 
+count = 0
+for r in repos:
+    count += 1
+
+print count, "repositories found"
+
+
 for repo in repos:
     if not repo.name.endswith("-docs"):
-        print repo.name
+        print " -",repo.name
 
         filename = os.path.join(outpath,repo.name.lower()+".md")
     
