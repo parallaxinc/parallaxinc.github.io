@@ -27,10 +27,6 @@ Add an absolute link to your project logo:
 
     image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
     
-Add the preferred version number:
-
-    version: 0.33.3
-    
 Categorize your application:
 
     type: tools
@@ -44,9 +40,10 @@ You can also add custom links at the top:
 Put it all together:
 
     image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
-    version: 0.33.3
     type: tools
 
     links:
         Docs: /docs/propellermanager/html
         Some Other Thing: www.google.com
+
+If your project contains Github Releases, this site will automatically publish the latest release that is *not* marked as *draft* or *prerelease*.
