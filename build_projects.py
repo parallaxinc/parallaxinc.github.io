@@ -66,8 +66,8 @@ def render_readme(repo):
         print "Converting",readme.name, ext
         readmetext = pypandoc.convert(readmetext,'md',format=ext)
 
-    readmetext = re.sub(r"!\[([^\]]*?)\]\((?<!(https:))([^\)]*?)\)",
-                        r"![\1]("+repo.html_url+r"/raw/master/\3)",
+    readmetext = re.sub(r"!\[([^\]]*?)\]\((?<!https:)([^\):]*?)\)",
+                        r"![\1]("+repo.html_url+r"/raw/master/\2)",
                         readmetext)
 
     output += readmetext+"\n"

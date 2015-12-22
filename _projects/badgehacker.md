@@ -27,7 +27,7 @@ platforms:
 ---
 # BadgeHacker
 
-![](https://github.com/parallaxinc/BadgeHacker/raw/master/https://raw.githubusercontent.com/parallaxinc/BadgeHacker/master/gfx/20000-cut.png)
+![](https://raw.githubusercontent.com/parallaxinc/BadgeHacker/master/gfx/20000-cut.png)
 
 BadgeHacker is a powerful set of tools to streamline the deployment of
 Parallax Hackable Electronic Badges for your next event.
@@ -37,7 +37,7 @@ Parallax Hackable Electronic Badges for your next event.
 The primary use of BadgeHacker allows guests to easily modify and retrieve
 contacts from their badges, without having to touch a line of code.
 
-![preview](https://github.com/parallaxinc/BadgeHacker/raw/master/http://bit.ly/1RrUz8s)
+![preview](http://bit.ly/1RrUz8s)
 
 ## Bulk Programmer
 
@@ -48,5 +48,5 @@ to easily load individual contacts onto each badge.
 
 Connect and program many badges at once and be done in a fraction of the time!
 
-![bulkprogrammer](https://github.com/parallaxinc/BadgeHacker/raw/master/http://bit.ly/1lAMmCf)
+![bulkprogrammer](http://bit.ly/1lAMmCf)
 
