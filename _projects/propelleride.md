@@ -32,12 +32,12 @@ platforms:
     file: propelleride-0.33.3-armhf.deb
 
 ---
-![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)
-[![Travis CI Build Status](https://travis-ci.org/parallaxinc/PropellerIDE.svg?branch=master)](https://travis-ci.org/parallaxinc/PropellerIDE) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/2gj0hjoqjau9is4b?svg=true)](https://ci.appveyor.com/project/bweir/propelleride)
+![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)
+[![Travis CI Build Status](https://github.com/parallaxinc/PropellerIDE/raw/master/https://travis-ci.org/parallaxinc/PropellerIDE.svg?branch=master)](https://travis-ci.org/parallaxinc/PropellerIDE) [![AppVeyor Build Status](https://github.com/parallaxinc/PropellerIDE/raw/master/https://ci.appveyor.com/api/projects/status/2gj0hjoqjau9is4b?svg=true)](https://ci.appveyor.com/project/bweir/propelleride)
 
 PropellerIDE is an easy-to-use, cross-platform development tool for the Parallax Propeller microcontroller.
 
-![](https://raw.githubusercontent.com/parallaxinc/PropellerIDE/master/screenshots/dusk.png)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/https://raw.githubusercontent.com/parallaxinc/PropellerIDE/master/screenshots/dusk.png)
 
 PropellerIDE rocks your socks with tons of awesome features:
 

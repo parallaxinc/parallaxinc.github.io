@@ -12,9 +12,9 @@ tag_name: 0.5.7
 tag_url:  https://github.com/parallaxinc/PropellerManager/releases/tag/0.5.7
 platforms:
 ---
-![logo](https://raw.githubusercontent.com/parallaxinc/PropellerManager/master/gfx/PropellerManager.png)
+![logo](https://github.com/parallaxinc/PropellerManager/raw/master/https://raw.githubusercontent.com/parallaxinc/PropellerManager/master/gfx/PropellerManager.png)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/8mwhkfrbnvuwlo1m?svg=true)](https://ci.appveyor.com/project/bweir/propellermanager) [![Build Status](https://travis-ci.org/parallaxinc/PropellerManager.svg)](https://travis-ci.org/parallaxinc/PropellerManager)
+[![Build status](https://github.com/parallaxinc/PropellerManager/raw/master/https://ci.appveyor.com/api/projects/status/8mwhkfrbnvuwlo1m?svg=true)](https://ci.appveyor.com/project/bweir/propellermanager) [![Build Status](https://github.com/parallaxinc/PropellerManager/raw/master/https://travis-ci.org/parallaxinc/PropellerManager.svg)](https://travis-ci.org/parallaxinc/PropellerManager)
 
 PropellerManager is an event-driven Qt/C++ API for developing integrated Propeller applications.
 

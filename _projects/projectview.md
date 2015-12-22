@@ -28,19 +28,19 @@ projectview implements project parser that is controlled by simple regular expre
 
 Here, projectview is showing a Spin language project.
 
-![](https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/projectview.png)
+![](https://github.com/parallaxinc/projectview/raw/master/https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/projectview.png)
 
 projectview notifies the user when there is a circular dependency in inclusion.
 
-![](https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/circular.png)
+![](https://github.com/parallaxinc/projectview/raw/master/https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/circular.png)
 
 It will also tell you when a file was not found.
 
-![](https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/notfound.png)
+![](https://github.com/parallaxinc/projectview/raw/master/https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/notfound.png)
 
 projectview can be searched.
 
-![](https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/search.png)
+![](https://github.com/parallaxinc/projectview/raw/master/https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/search.png)
 
 ## Usage
 
