@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os, sys
+import os, sys, re
 import shutil
 import pypandoc
 import yaml
@@ -45,6 +45,13 @@ repos = org.get_repos()
 print "Remaining requests:", gh.get_rate_limit().rate.remaining
 
 
+def fix_image_url(repo, url):
+
+    if len(url) > 0 and not url.startswith("https://") and not url.startswith("/"):
+        url = repo.html_url + "/raw/master/" + url 
+
+    return url
+
 def render_readme(repo):
     output = ""
     try:
@@ -58,6 +65,10 @@ def render_readme(repo):
     if not ext == 'md':
         print "Converting",readme.name, ext
         readmetext = pypandoc.convert(readmetext,'md',format=ext)
+
+    readmetext = re.sub(r"!\[([^\]]*?)\]\((?<!https:)([^\):]*?)\)",
+                        r"![\1]("+repo.html_url+r"/raw/master/\2)",
+                        readmetext)
 
     output += readmetext+"\n"
 
@@ -118,6 +129,8 @@ def render_page(repo):
             if c == "links":
                 for l in config[c].keys():
                     links[l] = config[c][l]
+            elif c == "image":
+                output += c+": "+fix_image_url(repo, config[c])+"\n"
             else:
                 output += c+": "+config[c]+"\n"
     except:
