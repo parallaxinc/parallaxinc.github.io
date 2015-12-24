@@ -1,0 +1,30 @@
+---
+layout: page
+title: Blog
+header: Posts
+group: navigation
+---
+{% include JB/setup %}
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div id="leftcol" class="col-sm-8 col-md-8">
+                {% for post in site.posts %}
+                <article class="post">
+                    <div class="post_header">
+                        <h3 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    </div>
+                    <div class="post_content">
+                        <figure><a href="{{ post.url }}"><img alt="0" src="{{ post.image }}"></a></figure>
+                        <p>{{ post.excerpt }}</p>
+                        <a href="{{ post.url }}">Read more...</a>
+                    </div>
+                </article>
+                <br></br>
+                {% endfor %}
+            </div>
+            {% include side_bar.html %}
+        </div>
+    </div>
+</div>

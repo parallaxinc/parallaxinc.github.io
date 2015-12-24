@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="assets/themes/bootstrap-3/css/style.css">
+
+<div id="sidebar" class="col-sm-4 col-md-4">
+    <aside class="widget">
+        <h3>Recent Posts</h3>
+            {% for category in site.categories %}
+                {% assign category_name = category | first %}
+                <ul>
+                    <h4>{{ category_name }} </h4>
+                    {% for tag in site.tags %}
+                        {% assign tag_name = tag | first %}
+                            {% for post in site.posts %}
+                                {% if post.categories contains category_name %}
+                                    {% if post.tags contains tag_name %}
+                                        <ul>
+                                        <li>
+                                            <h4>{{ tag_name }}</h4>
+                                            <h5><a href="{{ post.url }}">{{ post.title | truncate: 20 }}</a></h5>
+                                            <h6>{{ post.date | date: "%-d %B, %Y" }}</h6>
+                                        </li>
+                                        </ul>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+    </aside>
+</div>
