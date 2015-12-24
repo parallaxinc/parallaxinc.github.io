@@ -17,15 +17,11 @@ Making your project look presentable is as easy as three steps.
 
 Make a nice, preferably markdown-formatted README for your project. It's rendered to the page HTML so you want it to look good.
 
-#### Step 2: Use absolute image URLs
-
-This site doesn't store any content locally; it pulls it all from GitHub, so if you want your images to show up, use absolute links to them.
-
-#### Step 3: Add a `site.yml` config to your project root
+#### Step 2: Add a `site.yml` config to your project root
 
 Add an absolute link to your project logo:
 
-    image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
+    image: icons/logo.png
     
 Categorize your application:
 
@@ -39,7 +35,7 @@ You can also add custom links at the top:
         
 Put it all together:
 
-    image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
+    image: icons/logo.png
     type: tools
 
     links:
@@ -47,3 +43,7 @@ Put it all together:
         Some Other Thing: www.google.com
 
 If your project contains Github Releases, this site will automatically publish the latest release that is *not* marked as *draft* or *prerelease*.
+
+Step 3: Wait
+
+The site will be updated to reflect your changes in a day or so, or submit an issue requesting a rebuild for faster turnaround.
