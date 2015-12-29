@@ -26,17 +26,23 @@ Add an absolute link to your project logo:
 Categorize your application:
 
     type: tools
+    
+Use more than one category with the pipe character (`"|"`):
 
-You can also add custom links at the top:
+    type tools|libraries
+
+Links are automatically added to the top of every page. `Code` and `Releases` point to the main repository and GitHub Releases page for a project. An `Issues` link is added if the project uses GitHub Issues.
+
+You can also add custom links:
 
     links:
         Docs: /docs/propellermanager/html
         Some Other Thing: www.google.com
-        
+
 Put it all together:
 
     image: icons/logo.png
-    type: tools
+    type: tools|libraries
 
     links:
         Docs: /docs/propellermanager/html
