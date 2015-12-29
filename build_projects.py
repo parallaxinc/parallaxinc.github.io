@@ -7,6 +7,7 @@ import pypandoc
 import yaml
 
 import github
+import urllib2
 
 import argparse
 
@@ -44,30 +45,46 @@ repos = org.get_repos()
 
 print "Remaining requests:", gh.get_rate_limit().rate.remaining
 
+def raw_url(repo):
+    return repo.html_url + "/raw/" + repo.default_branch + "/"
 
 def fix_image_url(repo, url):
 
     if len(url) > 0 and not url.startswith("https://") and not url.startswith("/"):
-        url = repo.html_url + "/raw/master/" + url 
+        url = raw_url(repo) + url 
 
     return url
 
-def render_readme(repo):
+def render_readme(repo, filename=None):
     output = ""
-    try:
-        readme = repo.get_readme()
-    except github.UnknownObjectException:
-        return output
+    readme = ""
+    readmetext = ""
+    ext = ""
 
-    readmetext = unicode(readme.decoded_content,'utf8')
-    ext = os.path.splitext(readme.name)[1].replace('.','')
+    if filename == None:
+        try:
+            readme = repo.get_readme()
+        except github.UnknownObjectException:
+            return output
+
+        readmetext = unicode(readme.decoded_content,'utf8')
+        ext = os.path.splitext(readme.name)[1].replace('.','')
+    else:
+        try:
+            response = urllib2.urlopen(raw_url(repo) + filename)
+        except urllib2.HTTPError:
+            print "WARNING:",config["readme"], "not found"
+            return output
+
+        readmetext = unicode(response.read(),'utf8')
+        ext = os.path.splitext(filename)[1].replace('.','')
 
     if not ext == 'md':
         print "Converting",readme.name, ext
         readmetext = pypandoc.convert(readmetext,'md',format=ext)
 
     readmetext = re.sub(r"!\[([^\]]*?)\]\((?<!https:)([^\):]*?)\)",
-                        r"![\1]("+repo.html_url+r"/raw/master/\2)",
+                        r"![\1]("+raw_url(repo)+"\2)",
                         readmetext)
 
     output += readmetext+"\n"
@@ -121,20 +138,23 @@ def render_page(repo):
         links["Issues"] = repo.html_url+"/issues"
 
     # site.yml
+
+    config = {}
     try:
         siteyml = repo.get_file_contents("site.yml")
         config = yaml.load(siteyml.decoded_content)
-
-        for c in config.keys():
-            if c == "links":
-                for l in config[c].keys():
-                    links[l] = config[c][l]
-            elif c == "image":
-                output += c+": "+fix_image_url(repo, config[c])+"\n"
-            else:
-                output += c+": "+config[c]+"\n"
     except:
         pass
+
+
+    for c in config.keys():
+        if c == "links":
+            for l in config[c].keys():
+                links[l] = config[c][l]
+        elif c == "image":
+            output += c+": "+fix_image_url(repo, config[c])+"\n"
+        else:
+            output += c+": "+config[c]+"\n"
 
 
     # links
@@ -146,7 +166,11 @@ def render_page(repo):
     output += render_releases(repo)
     output += "---\n"
 
-    output += render_readme(repo)
+    try:
+        output += render_readme(repo, config["readme"])
+    except KeyError:
+        output += render_readme(repo)
+
 
     return output
 

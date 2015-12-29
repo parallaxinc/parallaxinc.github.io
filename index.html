@@ -22,25 +22,35 @@ tagline: to the new home of Parallax open-source software
 <div class="row">
 
   <div class="col-md-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">All Projects</h3>
-      </div>
-      <div class="panel-body">
+
+    <div class="panel-group" id="accordion" role="tablist">
       {% for apptype in apptype_array %}
-        <h3><a href="#{{ apptype }}">{{ apptype | capitalize }}</a></h3>
-        <ul class="nav">
-
-        {% for project in site.projects %}
-          {% if project.type == apptype %}
-          <li><h5><a href="{{ project.url }}">{{ project.title }}</a></h5></li>
-          {% endif %}
-        {% endfor %}
-
-        </ul>
-      {% endfor %}
+      <div class="panel panel-default">
+        <a href="#collapse{{ apptype }}" data-parent="#accordion" data-toggle="collapse">
+          <div class="panel-heading">
+            <h1 class="panel-title">
+                    {{ apptype | capitalize }}
+            </h1>
           </div>
+        </a>
+        <div id="collapse{{ apptype }}" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul class="nav">
+            {% for project in site.projects %}
+              {% assign projecttype_array = project.type | split: "|" %}
+              {% for projecttype in projecttype_array %}
+                {% if projecttype == apptype %}
+                <li><h5><a href="{{ project.url }}">{{ project.title }}</a></h5></li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
       </div>
+      {% endfor %}
+    </div>
+
   </div>
 
   <div class="col-md-9">
@@ -51,33 +61,36 @@ tagline: to the new home of Parallax open-source software
     {% assign divopen = false %}
 
     {% for project in site.projects %}
-      {% if project.type == apptype %}
-        {% assign loopindex = loopindex | plus: 1 %}
-        {% assign rowfinder = loopindex | modulo: 2 %}
+      {% assign projecttype_array = project.type | split: "|" %}
+      {% for projecttype in projecttype_array %}
+          {% if projecttype == apptype %}
+            {% assign loopindex = loopindex | plus: 1 %}
+            {% assign rowfinder = loopindex | modulo: 2 %}
 
-        {% if rowfinder == 1 %}
-          <div class="row">
-          {% assign divopen = true %}
-        {% endif %}
-
-          <div class="col-md-6">
-            <a href="{{ project.url }}">
-            <h3>{{ project.title }}</h3>
-            </a>
-            <h4>{{ project.tagline }}</h4>
-            {% if project.image %}
-              <a href="{{ project.url }}">
-              <img class="img-responsive" src="{{ project.image }}" alt="{{ project.name }}" />
-              </a>
+            {% if rowfinder == 1 %}
+              <div class="row">
+              {% assign divopen = true %}
             {% endif %}
-          </div>
 
-        {% if rowfinder == 0 %}
-          </div>
-          {% assign divopen = false %}
-        {% endif %}
+              <div class="col-md-6">
+                <a href="{{ project.url }}">
+                <h3>{{ project.title }}</h3>
+                </a>
+                <h4>{{ project.tagline }}</h4>
+                {% if project.image %}
+                  <a href="{{ project.url }}">
+                  <img class="img-responsive" src="{{ project.image }}" alt="{{ project.name }}" />
+                  </a>
+                {% endif %}
+              </div>
 
-      {% endif %}
+            {% if rowfinder == 0 %}
+              </div>
+              {% assign divopen = false %}
+            {% endif %}
+
+          {% endif %}
+      {% endfor %}
     {% endfor %}
 
     {% if divopen %}

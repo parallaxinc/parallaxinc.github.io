@@ -1,24 +1,26 @@
 ---
 layout: page
 ---
+{% assign apptype_array = page.type | split: "|" %}
+
 <div class="row">
   <div class="col-md-3">
     <div class="panel panel-default">
-      <div class="panel-body">
-        {% if page.type != 'other' %}
-          <h4>Other {{ page.type }}</h4>
-        {% else %}
-          <h4>Other projects</h4>
-        {% endif %}
-        <ul class="nav">
-        {% for project in site.projects %}
-          {% if project.type == page.type and page.url != project.url %}
-          <li><h5><a href="{{ project.url }}">{{ project.title }}</a></h5></li>
-          {% endif %}
-        {% endfor %}
-        </ul>
-
-      </div>
+      {% for apptype in apptype_array %}
+        <div class="panel-body">
+          <h3 class="panel-title">{{ apptype | capitalize }}</h3>
+          <ul class="nav">
+          {% for project in site.projects %}
+            {% assign projecttype_array = project.type | split: "|" %}
+            {% for projecttype in projecttype_array %}
+              {% if projecttype == apptype %}
+              <li><h5><a href="{{ project.url }}">{{ project.title }}</a></h5></li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
     </div>
   </div>
 
