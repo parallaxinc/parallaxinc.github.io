@@ -17,6 +17,8 @@ Making your project look presentable is as easy as three steps.
 
 Make a nice, preferably markdown-formatted README for your project. It's rendered to the page HTML so you want it to look good.
 
+The site builder will attempt to pull the README from the default branch in your repository.
+
 #### Step 2: Add a `site.yml` config to your project root
 
 Add an absolute link to your project logo:
