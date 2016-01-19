@@ -10,7 +10,7 @@
         {% endfor %}
       </ul>
       <h4>Looking for an older version?</h4>
-      <p>View the <a href="{{ page.repo }}">release archive</a>.</p>
+      <p>View the <a href="{{ page.links.Releases }}">release archive</a>.</p>
     </div>
     <div class="col-sm-4 col-md-4">
       <div class="tab-content" id="myTabContent" style="width:100%">
