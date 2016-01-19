@@ -75,14 +75,14 @@ The load test is configured so that each user makes a request each 5 to 15 secon
 - Load average: 0.3 - 0.45
 - uwsgi cpu: 24 - 28%
 
-![Locust 200 users](https://github.com/parallaxinc/Cloud-Compiler/raw/master/)
+![Locust 200 users](https://github.com/parallaxinc/Cloud-Compiler/raw/master//locust200.png)
 
 ### 400 users
 
 - Load average: 0.87 - 0.95
 - uwsgi cpu: 50 - 62%
 
-![Locust 400 users](https://github.com/parallaxinc/Cloud-Compiler/raw/master/)
+![Locust 400 users](https://github.com/parallaxinc/Cloud-Compiler/raw/master//locust400.png)
 
 
 ### 500 users
@@ -92,5 +92,5 @@ The load test is configured so that each user makes a request each 5 to 15 secon
 
 Once a certain load is reached, response times go up fast.
 
-![Locust 500 users](https://github.com/parallaxinc/Cloud-Compiler/raw/master/)
+![Locust 500 users](https://github.com/parallaxinc/Cloud-Compiler/raw/master//locust500.png)
 

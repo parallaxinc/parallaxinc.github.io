@@ -48,27 +48,27 @@ PropellerIDE is a fun, easy, beautiful editor for the Propeller microcontroller.
 
 #### Main Window
 
-![](https://github.com/parallaxinc/PropellerIDE/raw/master/)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/screenshots/main.png)
 
 #### Memory Map
 
-![](https://github.com/parallaxinc/PropellerIDE/raw/master/)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/screenshots/memorymap.png)
 
 #### Terminal
 
-![](https://github.com/parallaxinc/PropellerIDE/raw/master/)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/screenshots/terminal.png)
 
 #### Project View
 
-![](https://github.com/parallaxinc/PropellerIDE/raw/master/)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/screenshots/projectview.png)
 
 #### Indent Guides
 
-![](https://github.com/parallaxinc/PropellerIDE/raw/master/)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/screenshots/indentguide.png)
 
 #### Theming
 
-![](https://github.com/parallaxinc/PropellerIDE/raw/master/)
+![](https://github.com/parallaxinc/PropellerIDE/raw/master/screenshots/theming.png)
 
 ## License
 

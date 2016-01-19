@@ -38,7 +38,7 @@ Most of below is a one-time procedure needed to build the application, unless ot
 
   ` git clone git@github.com:parallaxinc/Parallax-IDE `
 
-  ![clone repo](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+  ![clone repo](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/clone-ParallaxIDE.png)
 
 1. Go to the project root directory with
 
@@ -65,22 +65,22 @@ Most of below is a one-time procedure needed to build the application, unless ot
 
 1. Enable 'Developer Mode' by clicking the checkbox.
 
-  ![enable developer mode](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+  ![enable developer mode](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/enable-developer-mode.png)
 
 1. Before you install your extension must be built and bundled.  If you haven't done so follow the instructions in the [Build from Source](#user-content-build-from-source) section first.
 
 1. Click on __'Load unpacked extensions...'__, go to the directory where Parallax IDE was built, highlight the *'Parallax-IDE'* folder and and click select.
 
-	![load extension](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
-	![select folder](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+	![load extension](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/load-unpacked-extensions.png)
+	![select folder](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/select-extension-folder.png)
 
 1. Return to the ` chrome://extensions ` page and you should see __'Parallax IDE'__ listed in available extensions.
 
-	![Parallax IDE listed](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+	![Parallax IDE listed](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/ParallaxIDE-listed.png)
 1. Ensure the checkbox is *'enabled'* and click __'launch'__.
 1. __Congratulations!__ You just launched Parallax IDE which will look something like this:
 
-	![app launched](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+	![app launched](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/ParallaxIDE-launched.png)
 
 
 ## Coming Back
@@ -93,8 +93,8 @@ or
 
 * go to chrome app launcher and click on/search for *Parallax IDE*
 
-  ![chrome app launcher](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+  ![chrome app launcher](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/chrome-app-launcher.png)
 
-  ![click Parallax IDE](https://github.com/parallaxinc/Parallax-IDE/raw/master/)
+  ![click Parallax IDE](https://github.com/parallaxinc/Parallax-IDE/raw/master/readme-images/search-chrome-app-launcher.png)
 
 

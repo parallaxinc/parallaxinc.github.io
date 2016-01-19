@@ -15,5 +15,5 @@ platforms:
 
 A memory map widget for PropellerIDE
 
-![](https://github.com/parallaxinc/memorymap/raw/master/)
+![](https://github.com/parallaxinc/memorymap/raw/master/screenshots/memorymap2.png)
 

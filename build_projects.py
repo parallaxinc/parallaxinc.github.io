@@ -84,7 +84,7 @@ def render_readme(repo, filename=None):
         readmetext = pypandoc.convert(readmetext,'md',format=ext)
 
     readmetext = re.sub(r"!\[([^\]]*?)\]\((?<!https:)([^\):]*?)\)",
-                        r"![\1]("+raw_url(repo)+"\2)",
+                        r"![\1]("+raw_url(repo)+r"\2)",
                         readmetext)
 
     output += readmetext+"\n"

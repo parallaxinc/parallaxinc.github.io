@@ -16,7 +16,7 @@ Scribbler (Windows) Development Environment
 
 This software allows you to program the [Scribbler 2 (S2)](http://www.parallax.com/product/28136) robot using easy-to-understand modular blocks.  
 
-![Scribbler Screenshot](https://github.com/parallaxinc/Scribbler-2/raw/master/)
+![Scribbler Screenshot](https://github.com/parallaxinc/Scribbler-2/raw/master/images/ScreenShot.png)
 
 The Scribbler software is written in Perl for Windows.
 
