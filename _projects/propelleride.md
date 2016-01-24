@@ -8,28 +8,28 @@ links:
     Code: https://github.com/parallaxinc/PropellerIDE
     Issues: https://github.com/parallaxinc/PropellerIDE/issues
     Releases: https://github.com/parallaxinc/PropellerIDE/releases
-tag_name: 0.35.0
-tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.35.0
+tag_name: 0.35.1
+tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.35.1
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.0/propelleride-0.35.0-amd64.deb
-    file: propelleride-0.35.0-amd64.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.deb
+    file: propelleride-0.35.1-amd64.deb
 
   - name: OS X
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.0/propelleride-0.35.0-amd64.dmg
-    file: propelleride-0.35.0-amd64.dmg
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.dmg
+    file: propelleride-0.35.1-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.0/propelleride-0.35.0-amd64.exe
-    file: propelleride-0.35.0-amd64.exe
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.exe
+    file: propelleride-0.35.1-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.0/propelleride-0.35.0-amd64.run
-    file: propelleride-0.35.0-amd64.run
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.run
+    file: propelleride-0.35.1-amd64.run
 
   - name: Raspbian
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.0/propelleride-0.35.0-armhf.deb
-    file: propelleride-0.35.0-armhf.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-armhf.deb
+    file: propelleride-0.35.1-armhf.deb
 
 ---
 ![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)

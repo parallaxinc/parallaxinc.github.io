@@ -7,8 +7,8 @@ links:
     Manual: https://github.com/parallaxinc/PropBASIC/raw/master/doc/PropBASIC.pdf
     Issues: https://github.com/parallaxinc/PropBASIC/issues
     Releases: https://github.com/parallaxinc/PropBASIC/releases
-tag_name: 1.44.0
-tag_url:  https://github.com/parallaxinc/PropBASIC/releases/tag/1.44.0
+tag_name: 1.44.1
+tag_url:  https://github.com/parallaxinc/PropBASIC/releases/tag/1.44.1
 platforms:
 ---
 # PropBASIC
