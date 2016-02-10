@@ -8,8 +8,8 @@ links:
     Code: https://github.com/parallaxinc/PropellerManager
     Issues: https://github.com/parallaxinc/PropellerManager/issues
     Releases: https://github.com/parallaxinc/PropellerManager/releases
-tag_name: 0.5.7
-tag_url:  https://github.com/parallaxinc/PropellerManager/releases/tag/0.5.7
+tag_name: 0.8.2
+tag_url:  https://github.com/parallaxinc/PropellerManager/releases/tag/0.8.2
 platforms:
 ---
 ![logo](https://raw.githubusercontent.com/parallaxinc/PropellerManager/master/gfx/PropellerManager.png)

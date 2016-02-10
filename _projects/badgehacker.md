@@ -9,20 +9,24 @@ links:
     Code: https://github.com/parallaxinc/BadgeHacker
     Issues: https://github.com/parallaxinc/BadgeHacker/issues
     Releases: https://github.com/parallaxinc/BadgeHacker/releases
-tag_name: 0.8.0
-tag_url:  https://github.com/parallaxinc/BadgeHacker/releases/tag/0.8.0
+tag_name: 0.9.1
+tag_url:  https://github.com/parallaxinc/BadgeHacker/releases/tag/0.9.1
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.8.0/badgehacker-0.8.0-amd64.deb
-    file: badgehacker-0.8.0-amd64.deb
+    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.9.1/badgehacker-0.9.1-amd64.deb
+    file: badgehacker-0.9.1-amd64.deb
 
   - name: OS X
-    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.8.0/badgehacker-0.8.0-amd64.dmg
-    file: badgehacker-0.8.0-amd64.dmg
+    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.9.1/badgehacker-0.9.1-amd64.dmg
+    file: badgehacker-0.9.1-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.8.0/badgehacker-0.8.0-amd64.exe
-    file: badgehacker-0.8.0-amd64.exe
+    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.9.1/badgehacker-0.9.1-amd64.exe
+    file: badgehacker-0.9.1-amd64.exe
+
+  - name: Linux
+    link: https://github.com/parallaxinc/BadgeHacker/releases/download/0.9.1/badgehacker-0.9.1-amd64.run
+    file: badgehacker-0.9.1-amd64.run
 
 ---
 # BadgeHacker

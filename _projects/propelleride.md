@@ -2,34 +2,34 @@
 title: PropellerIDE
 tagline: An easy-to-use, cross-platform IDE for the Parallax Propeller
 image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
-version: 0.33.3
 type: tools
 links:
+    Docs: /docs/propelleride/html
     Code: https://github.com/parallaxinc/PropellerIDE
     Issues: https://github.com/parallaxinc/PropellerIDE/issues
     Releases: https://github.com/parallaxinc/PropellerIDE/releases
-tag_name: 0.35.1
-tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.35.1
+tag_name: 0.36.5
+tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.36.5
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.deb
-    file: propelleride-0.35.1-amd64.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.5/propelleride-0.36.5-amd64.deb
+    file: propelleride-0.36.5-amd64.deb
 
   - name: OS X
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.dmg
-    file: propelleride-0.35.1-amd64.dmg
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.5/propelleride-0.36.5-amd64.dmg
+    file: propelleride-0.36.5-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.exe
-    file: propelleride-0.35.1-amd64.exe
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.5/propelleride-0.36.5-amd64.exe
+    file: propelleride-0.36.5-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-amd64.run
-    file: propelleride-0.35.1-amd64.run
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.5/propelleride-0.36.5-amd64.run
+    file: propelleride-0.36.5-amd64.run
 
   - name: Raspbian
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.35.1/propelleride-0.35.1-armhf.deb
-    file: propelleride-0.35.1-armhf.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.5/propelleride-0.36.5-armhf.deb
+    file: propelleride-0.36.5-armhf.deb
 
 ---
 ![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)
