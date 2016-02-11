@@ -5,6 +5,25 @@ links:
     Code: https://github.com/parallaxinc/Flight-Controller
     Issues: https://github.com/parallaxinc/Flight-Controller/issues
     Releases: https://github.com/parallaxinc/Flight-Controller/releases
+tag_name: 1.0.3
+tag_url:  https://github.com/parallaxinc/Flight-Controller/releases/tag/1.0.3
+platforms:
+  - name: Ubuntu
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.deb
+    file: elev8-flightcontroller-1.0.3-amd64.deb
+
+  - name: OS X
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.dmg
+    file: elev8-flightcontroller-1.0.3-amd64.dmg
+
+  - name: Windows
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.exe
+    file: elev8-flightcontroller-1.0.3-amd64.exe
+
+  - name: Linux
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.run
+    file: elev8-flightcontroller-1.0.3-amd64.run
+
 ---
 # Elev8 Flight Controller
 

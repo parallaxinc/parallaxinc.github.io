@@ -14,9 +14,25 @@
   float: right; }*/
 
 /* Jekyll Bootstrap Colors */
-h1, h2, h3, h4 {
-  color: #002942;
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 940px; /* or 950px */
 }
+
+h1, h2 {
+    color: #002942;
+}
+
+h2 {
+    color: #003f66;
+}
+
+h3, h4 {
+    color: #2a6496;
+}
+
 #footer {
   background-color: #002642;
   color: #FFFFFF;
@@ -90,4 +106,35 @@ code {
 
 img {
     max-width: 100%;
+}
+
+.hr-bottom, .hr-top {
+    height: 20px;
+    background: url(/images/hr.png) no-repeat bottom;
+    background-size: contain;
+    border: 0;
+}
+
+.hr-bottom {
+    transform: rotate(180deg);
+}
+
+body {
+    padding-top: 40px;
+}
+
+.navbar-brand {
+    padding: 8px;
+}
+
+.jumbotron {
+    background-image: url(/images/jumbo.png);
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#footer {
+    height: auto;
 }

@@ -1,103 +1,81 @@
 ---
 layout: page
 title: Welcome
-permalink: /
-apptypes: tools|compilers|libraries|hardware|other
 tagline: to the new home of Parallax open-source software
+permalink: /
+
+apptypes:
+    -   slug: tools
+        name: Tools
+        description:
+
+    -   slug: compilers
+        name: Compilers
+        description: 
+
+    -   slug: libraries
+        name: Libraries
+        description: 
+
+    -   slug: hardware
+        name: Hardware
+        description: Find open-source schematics and design files for many Parallax-related products.
+
+    -   slug: other
+        name: Other
+        description: 
+
 ---
 
-<div class="row"></p>
-  <div class="col-md-12">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>This is the portal for discovering all the exciting open-source projects going on in the Parallax community.</p>
-        <p>Here you will find links, downloads, documentation, and more!</p>
-      </div>
-    </div>
-  </div>
+<div class="jumbotron">
 </div>
 
-{% assign apptype_array = page.apptypes | split: "|" %}
+<p>While some projects have originated within Parallax itself, many projects were created and are driven by volunteers in the community.</p>
+<p>You can join the discussion too. Check out the <a href="http://forums.parallax.com/">Parallax Forums</a>, where many Parallax projects are born.</p>
 
-<div class="row">
+<hr class="hr-top">
 
-  <div class="col-md-3">
+<ul class="nav nav-pills nav-justified">
+{% for apptype in page.apptypes %}
+  <li><a href="#{{ apptype.slug }}">{{ apptype.name }}</a></li>
+{% endfor %}
+</ul>
 
-    <div class="panel-group" id="accordion" role="tablist">
-      {% for apptype in apptype_array %}
-      <div class="panel panel-default">
-        <a href="#collapse{{ apptype }}" data-parent="#accordion" data-toggle="collapse">
-          <div class="panel-heading">
-            <h1 class="panel-title">
-                    {{ apptype | capitalize }}
-            </h1>
+{% for apptype in page.apptypes %}
+<hr class="hr-bottom">
+<h2 id="{{ apptype.slug }}">{{ apptype.name }}</h2>
+<p>{{ apptype.description }}</p>
+
+{% assign loopindex = 0 %}
+{% assign divopen = false %}
+
+{% for project in site.projects %}
+  {% assign projecttype_array = project.type | split: "|" %}
+  {% for projecttype in projecttype_array %}
+      {% if projecttype == apptype.slug %}
+        {% assign loopindex = loopindex | plus: 1 %}
+        {% assign rowfinder = loopindex | modulo: 2 %}
+
+        {% if rowfinder == 1 %}
+          <div class="row">
+          {% assign divopen = true %}
+        {% endif %}
+
+          <div class="col-md-6">
+            <a href="{{ project.url }}"><h4>{{ project.title }}</h4></a>
+            <p>{{ project.tagline }}</p>
           </div>
-        </a>
-        <div id="collapse{{ apptype }}" class="panel-collapse collapse">
-          <div class="panel-body">
-            <ul class="nav">
-            {% for project in site.projects %}
-              {% assign projecttype_array = project.type | split: "|" %}
-              {% for projecttype in projecttype_array %}
-                {% if projecttype == apptype %}
-                <li><h5><a href="{{ project.url }}">{{ project.title }}</a></h5></li>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-            </ul>
+
+        {% if rowfinder == 0 %}
           </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+          {% assign divopen = false %}
+        {% endif %}
 
-  </div>
-
-  <div class="col-md-9">
-  {% for apptype in apptype_array %}
-    <h1 id="{{ apptype }}">{{ apptype | capitalize }}</h1>
-    <hr>
-    {% assign loopindex = 0 %}
-    {% assign divopen = false %}
-
-    {% for project in site.projects %}
-      {% assign projecttype_array = project.type | split: "|" %}
-      {% for projecttype in projecttype_array %}
-          {% if projecttype == apptype %}
-            {% assign loopindex = loopindex | plus: 1 %}
-            {% assign rowfinder = loopindex | modulo: 2 %}
-
-            {% if rowfinder == 1 %}
-              <div class="row">
-              {% assign divopen = true %}
-            {% endif %}
-
-              <div class="col-md-6">
-                <a href="{{ project.url }}">
-                <h3>{{ project.title }}</h3>
-                </a>
-                <h4>{{ project.tagline }}</h4>
-                {% if project.image %}
-                  <a href="{{ project.url }}">
-                  <img class="img-responsive" src="{{ project.image }}" alt="{{ project.name }}" />
-                  </a>
-                {% endif %}
-              </div>
-
-            {% if rowfinder == 0 %}
-              </div>
-              {% assign divopen = false %}
-            {% endif %}
-
-          {% endif %}
-      {% endfor %}
-    {% endfor %}
-
-    {% if divopen %}
-      </div>
-    {% endif %}
-
-    <hr>
+      {% endif %}
   {% endfor %}
+{% endfor %}
+
+{% if divopen %}
   </div>
-</div>
+{% endif %}
+{% endfor %}
