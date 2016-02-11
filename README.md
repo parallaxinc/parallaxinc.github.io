@@ -1,4 +1,4 @@
-# parallaxinc.github.io
+# Parallax Developer Site
 
 [developer.parallax.com](http://developer.parallax.com) is the home page for Parallax open-source development efforts.
 
