@@ -1,0 +1,20 @@
+---
+layout: page
+title: Documentation
+header: Documentation
+group: navigation
+permalink: /docs/
+---
+
+<ul>
+{% for project in site.projects %}
+  {% if project.links %}
+    {% for link in project.links %}
+      {% if link[0] == 'Docs' %}
+        <li><a href="{{ link[1] }}">{{ project.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</ul>
+

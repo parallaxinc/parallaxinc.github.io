@@ -1,10 +1,16 @@
 ---
 title: Flight-Controller
 tagline: Quadcopter Flight Controller
+image: https://github.com/parallaxinc/Flight-Controller/raw/master/Elev8-Groundstation/PropIcon.png
+type: hardware
 links:
+    Source Code: https://github.com/parallaxinc/Flight-Controller
     Code: https://github.com/parallaxinc/Flight-Controller
-    Issues: https://github.com/parallaxinc/Flight-Controller/issues
     Releases: https://github.com/parallaxinc/Flight-Controller/releases
+    Hardware: https://www.parallax.com/product/80204
+    Calibration and Tuning Guide: http://learn.parallax.com/calibrating-and-performance-tuning-your-elev-8-v3
+    Elev8-V3 Quadcopter: https://www.parallax.com/product/80300
+    Issues: https://github.com/parallaxinc/Flight-Controller/issues
 tag_name: 1.0.3
 tag_url:  https://github.com/parallaxinc/Flight-Controller/releases/tag/1.0.3
 platforms:

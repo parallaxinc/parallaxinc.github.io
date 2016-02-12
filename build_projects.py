@@ -125,6 +125,23 @@ def render_releases(repo):
 
     return output
 
+def get_config(repo):
+
+    config = {}
+
+    siteyml = None
+    try:
+        siteyml = repo.get_file_contents("site.yml")
+    except github.UnknownObjectException as e:
+        return config
+
+    try:
+        config = yaml.load(siteyml.decoded_content)
+    except:
+        print "'site.yml' file is invalid!!"
+
+    return config
+
 def render_page(repo):
     output = unicode("---\n",'utf8')
     output += "title: "+repo.name+"\n"
@@ -137,15 +154,7 @@ def render_page(repo):
     if repo.has_issues:
         links["Issues"] = repo.html_url+"/issues"
 
-    # site.yml
-
-    config = {}
-    try:
-        siteyml = repo.get_file_contents("site.yml")
-        config = yaml.load(siteyml.decoded_content)
-    except:
-        pass
-
+    config = get_config(repo)
 
     for c in config.keys():
         if c == "links":
@@ -155,7 +164,6 @@ def render_page(repo):
             output += c+": "+fix_image_url(repo, config[c])+"\n"
         else:
             output += c+": "+config[c]+"\n"
-
 
     # links
     output += "links:\n"
