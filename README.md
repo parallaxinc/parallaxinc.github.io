@@ -1,19 +1,10 @@
 # Parallax Developer Site
 
-[developer.parallax.com](http://developer.parallax.com) is the home page for Parallax open-source development efforts.
+[developer.parallax.com](http://developer.parallax.com) is the home page for Parallax open-source development.
 
-- PropellerIDE
-- BlocklyProp
-- OpenSpin
-- PropGCC
+This website is build by pulling content and metadata from the [parallaxinc GitHub](https://github.com/parallaxinc), so you can participate by simply editing your project.
 
-This website automatically pulls its content from the projects in the `parallaxinc` organization, so you can push changes to the site just by editing your project.
-
-### How can I participate?
-
-Making your project look presentable is as easy as three steps.
-
-#### Step 1: Add a README
+### Step 1: Add a README
 
 Make a nice, preferably markdown-formatted README for your project. It's rendered to the page HTML so you want it to look good.
 
@@ -21,9 +12,9 @@ The site builder will attempt to pull the README from the default branch in your
 
 If your project contains Github Releases, this site will automatically publish the latest release that is *NOT* marked as *draft* or *prerelease* in a special *Downloads* section of your project page.
 
-#### Step 2: Add a `site.yml` config to your project root
+### Step 2: Add a `site.yml` config to your project root
 
-##### Description
+#### Description
 
 Add the `description` key to add a longer description than the regular GitHub tagline provides.
 Use the pipe character (`|`) to add a description that spans several lines.
@@ -33,13 +24,13 @@ Use the pipe character (`|`) to add a description that spans several lines.
         Supporting every language under the sun, it promises to end world hunger and take
         us to the Super Bowl.
 
-##### Image
+#### Image
 
 Add a link to your project logo if available. It can be relative to the root of your repo, or an absolute URL to some magic place on the internet. Something square, in the neighborhood of 100x100 is best.
 
     image: icons/logo.png
     
-##### Type
+#### Type
 
 Specify the application type of your project. Projects that don't specify this key will appear in *Other*.
 
@@ -47,7 +38,7 @@ Specify the application type of your project. Projects that don't specify this k
     
 Supported types are: `tools`, `compilers`, `libraries`, `hardware`. 
 
-##### Microcontroller
+#### Microcontroller
 
 Specify the `microcontroller` key to limit the scope of your project to a specific microcontroller.
 
@@ -60,7 +51,7 @@ Specify the `microcontroller` key to limit the scope of your project to a specif
 | `prop1`   | Propeller 1       |
 | `prop2`   | Propeller 2       |
 
-##### Platform
+#### Platform
 
 Specify the `platform` key to limit the scope of your project to a specific platform.
 
@@ -71,7 +62,7 @@ Specify the `platform` key to limit the scope of your project to a specific plat
 | `elev8`       | ELEV-8 Quadcopter         |
 | `spinneret`   | Spinneret Web Server      |
 
-##### Board
+#### Board
 
 Specify the `board` key to limit the scope of your project to a specific board.
 
@@ -82,7 +73,7 @@ Specify the `board` key to limit the scope of your project to a specific board.
 | `pabwx`       | Propeller Activity Board WX   |
 | `c3`          | Propeller C3                  |
 
-##### Language
+#### Language
 
 Specify the `language` key to indicate the programming language your project is written in/for.
 
@@ -94,7 +85,7 @@ Specify the `language` key to indicate the programming language your project is 
 | `propbasic`   | PropBASIC                     |
 | `spin`        | Propeller Spin                |
 
-##### Multiple Values
+#### Multiple Values
 
 Types, platforms, boards, languages, and microcontrollers support the use of multiple values with the pipe character (`"|"`):
 
@@ -103,7 +94,7 @@ Types, platforms, boards, languages, and microcontrollers support the use of mul
     
 If you don't see the values you need, submit an issue to request them.
 
-##### Links
+#### Links
 
 Links are automatically added to the top of every page. `Code` and `Releases` point to the main repository and GitHub Releases page for a project. An `Issues` link is added if the project uses GitHub Issues.
 
@@ -113,7 +104,7 @@ However, you can use the `links` key to add custom links to your project:
         Docs: /docs/propellermanager/html
         Some Other Thing: www.google.com
 
-##### Finished `site.yml`
+#### Finished `site.yml`
 
 Put it all together:
 
@@ -129,6 +120,6 @@ Put it all together:
         Docs: /docs/propellermanager/html
         Some Other Thing: www.google.com
 
-#### Step 3: Wait
+### Step 3: Wait
 
 The site will be updated to reflect your changes in a day or so, or submit an issue requesting a rebuild for faster turnaround.
