@@ -15,20 +15,20 @@ tag_name: 1.0.3
 tag_url:  https://github.com/parallaxinc/Flight-Controller/releases/tag/1.0.3
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.deb
-    file: elev8-flightcontroller-1.0.3-amd64.deb
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.deb
+    file: parallax-groundstation-1.0.3-amd64.deb
 
   - name: OS X
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.dmg
-    file: elev8-flightcontroller-1.0.3-amd64.dmg
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.dmg
+    file: parallax-groundstation-1.0.3-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.exe
-    file: elev8-flightcontroller-1.0.3-amd64.exe
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.exe
+    file: parallax-groundstation-1.0.3-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/elev8-flightcontroller-1.0.3-amd64.run
-    file: elev8-flightcontroller-1.0.3-amd64.run
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.run
+    file: parallax-groundstation-1.0.3-amd64.run
 
 ---
 # Elev8 Flight Controller

@@ -1,31 +1,31 @@
 ---
 title: PropWare
 tagline: C++ objects and CMake build system for Parallax Propeller
-image: https://github.com/parallaxinc/PropWare/raw/release-2.0/docs/images/PropWare_Logo_64.png
+image: https://github.com/parallaxinc/PropWare/raw/develop/docs/images/PropWare_Logo_64.png
 type: tools|libraries
 links:
-    Source Code: https://github.com/DavidZemon/PropWare
+    Source Code: https://github.com/parallaxinc/PropWare
     Code: https://github.com/parallaxinc/PropWare
     Releases: https://github.com/parallaxinc/PropWare/releases
     Documentation: http://david.zemon.name/PropWare/
     Forum Thread: http://forums.parallax.com/showthread.php/157005-FYI-PropWare-Complete-build-system-and-library-for-PropGCC
     Build Server: http://david.zemon.name:8111/project.html?projectId=PropWare&tab=projectOverview&guest=1
-    Issue Tracker: https://github.com/DavidZemon/PropWare/issues
+    Issue Tracker: https://github.com/parallaxinc/PropWare/issues
     Issues: https://github.com/parallaxinc/PropWare/issues
-tag_name: v2.0.0
-tag_url:  https://github.com/parallaxinc/PropWare/releases/tag/v2.0.0
+tag_name: v2.1.0
+tag_url:  https://github.com/parallaxinc/PropWare/releases/tag/v2.1.0
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/PropWare/releases/download/v2.0.0/PropWare-2.0.0-Generic.deb
-    file: PropWare-2.0.0-Generic.deb
+    link: https://github.com/parallaxinc/PropWare/releases/download/v2.1.0/PropWare-2.1.0-Generic.deb
+    file: PropWare-2.1.0-Generic.deb
 
   - name: Windows
-    link: https://github.com/parallaxinc/PropWare/releases/download/v2.0.0/PropWare-2.0.0-Generic.exe
-    file: PropWare-2.0.0-Generic.exe
+    link: https://github.com/parallaxinc/PropWare/releases/download/v2.1.0/PropWare-2.1.0-Generic.exe
+    file: PropWare-2.1.0-Generic.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/PropWare/releases/download/v2.0.0/PropWare-2.0.0-Generic.rpm
-    file: PropWare-2.0.0-Generic.rpm
+    link: https://github.com/parallaxinc/PropWare/releases/download/v2.1.0/PropWare-2.1.0-Generic.rpm
+    file: PropWare-2.1.0-Generic.rpm
 
 ---
 PropWare
