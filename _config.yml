@@ -1,6 +1,3 @@
-markdown: kramdown
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-
 title : developer.parallax.com
 tagline: The home of Parallax open-source development
 author :
@@ -27,16 +24,7 @@ JB :
     provider : false
    
   analytics :
-    provider : google 
-    google : 
-        tracking_id : 'UA-285614-1'
-    getclicky :
-      site_id : 
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+    provider : false
 
   sharing :
     provider : false
