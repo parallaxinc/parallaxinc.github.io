@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Cloud-session-java-client
 tagline: Cloud-session - Java client
+type: other
 links:
     Code: https://github.com/parallaxinc/Cloud-session-java-client
     Issues: https://github.com/parallaxinc/Cloud-session-java-client/issues

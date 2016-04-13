@@ -1,4 +1,5 @@
 ---
+layout: project
 title: memorymap
 tagline: A memory map widget for PropellerIDE
 image: https://github.com/parallaxinc/memorymap/raw/master/screenshots/MemoryMap_018.png

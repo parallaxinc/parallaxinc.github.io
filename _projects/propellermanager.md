@@ -1,4 +1,5 @@
 ---
+layout: project
 title: PropellerManager
 tagline: An event-driven C++ API for Propeller devices
 image: https://raw.githubusercontent.com/parallaxinc/PropellerManager/master/gfx/PropellerManager.png

@@ -1,4 +1,5 @@
 ---
+layout: project
 title: spin-standard-library
 tagline: A curated collection of essential Spin objects
 type: libraries

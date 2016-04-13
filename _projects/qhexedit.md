@@ -1,4 +1,5 @@
 ---
+layout: project
 title: QHexEdit
 tagline: A hex editor widget for Qt5
 type: libraries

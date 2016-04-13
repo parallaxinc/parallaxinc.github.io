@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Prop-Loader_iOS
 tagline: Propeller Loader application for iOS
+type: other
 links:
     Code: https://github.com/parallaxinc/Prop-Loader_iOS
     Issues: https://github.com/parallaxinc/Prop-Loader_iOS/issues

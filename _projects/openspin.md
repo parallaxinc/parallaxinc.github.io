@@ -1,6 +1,8 @@
 ---
+layout: project
 title: OpenSpin
 tagline: Spin/PASM compiler for the Parallax Propeller.
+type: other
 links:
     Code: https://github.com/parallaxinc/OpenSpin
     Issues: https://github.com/parallaxinc/OpenSpin/issues

@@ -1,4 +1,5 @@
 ---
+layout: project
 title: PropellerIDE
 tagline: An easy-to-use, cross-platform IDE for the Parallax Propeller
 image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png

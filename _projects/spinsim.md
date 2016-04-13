@@ -1,6 +1,8 @@
 ---
+layout: project
 title: spinsim
 tagline: 
+type: other
 links:
     Code: https://github.com/parallaxinc/spinsim
     Issues: https://github.com/parallaxinc/spinsim/issues

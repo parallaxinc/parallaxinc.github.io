@@ -1,6 +1,8 @@
 ---
+layout: project
 title: propgcc
 tagline: A Port of GCC to the Parallax Propeller
+type: other
 links:
     Code: https://github.com/parallaxinc/propgcc
     Issues: https://github.com/parallaxinc/propgcc/issues

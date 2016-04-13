@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Propeller_1_Design
 tagline: Propeller 1 design and example files to be run on FPGA boards.
+type: other
 links:
     Code: https://github.com/parallaxinc/Propeller_1_Design
     Issues: https://github.com/parallaxinc/Propeller_1_Design/issues

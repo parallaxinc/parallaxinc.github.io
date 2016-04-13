@@ -1,6 +1,8 @@
 ---
+layout: project
 title: BlocklyProp
 tagline: Blockly based visual programming editor for Spin
+type: other
 links:
     Code: https://github.com/parallaxinc/BlocklyProp
     Issues: https://github.com/parallaxinc/BlocklyProp/issues

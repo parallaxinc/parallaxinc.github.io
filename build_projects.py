@@ -144,6 +144,7 @@ def get_config(repo):
 
 def render_page(repo):
     output = unicode("---\n",'utf8')
+    output += "layout: project\n"
     output += "title: "+repo.name+"\n"
     output += "tagline: "+repo.description+"\n"
 
@@ -164,6 +165,9 @@ def render_page(repo):
             output += c+": "+fix_image_url(repo, config[c])+"\n"
         else:
             output += c+": "+config[c]+"\n"
+
+    if not 'type' in config.keys():
+        output += "type: other\n"
 
     # links
     output += "links:\n"

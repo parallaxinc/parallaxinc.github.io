@@ -1,4 +1,5 @@
 ---
+layout: project
 title: BadgeHacker
 tagline: Customize your badges fast
 excerpt: Deploy the Parallax Hackable Electronic Badge at your event without ever having to touch a line of code.

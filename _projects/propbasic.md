@@ -1,4 +1,5 @@
 ---
+layout: project
 title: PropBASIC
 tagline: A BASIC compiler for the Propeller microcontroller.
 type: compilers

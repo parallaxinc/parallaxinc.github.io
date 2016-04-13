@@ -1,6 +1,8 @@
 ---
+layout: project
 title: spinwrap
 tagline: Tool to allow C/C++ programs to use Spin objects.
+type: other
 links:
     Code: https://github.com/parallaxinc/spinwrap
     Issues: https://github.com/parallaxinc/spinwrap/issues

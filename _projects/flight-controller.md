@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Flight-Controller
 tagline: Quadcopter Flight Controller
 image: https://github.com/parallaxinc/Flight-Controller/raw/master/Elev8-Groundstation/PropIcon.png

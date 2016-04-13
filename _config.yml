@@ -33,10 +33,3 @@ collections:
     projects:
         output: true
         permalink: /:path/
-
-defaults:
-    - scope:
-          collection: projects
-      values:
-          layout: project
-          type: other

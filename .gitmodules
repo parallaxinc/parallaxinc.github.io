@@ -1,6 +1,3 @@
 [submodule "docs/propellermanager"]
 	path = docs/propellermanager
 	url = https://github.com/parallaxinc/PropellerManager-docs
-[submodule "docs/propelleride"]
-	path = docs/propelleride
-	url = https://github.com/parallaxinc/PropellerIDE-docs

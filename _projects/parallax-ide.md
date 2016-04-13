@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Parallax-IDE
 tagline: Parallax microcontroller development environment based on Chrome applications.
+type: other
 links:
     Code: https://github.com/parallaxinc/Parallax-IDE
     Issues: https://github.com/parallaxinc/Parallax-IDE/issues

@@ -1,6 +1,8 @@
 ---
+layout: project
 title: BlocklyPropClient
 tagline: Client to compile and load projects from BlocklyProp 
+type: other
 links:
     Code: https://github.com/parallaxinc/BlocklyPropClient
     Issues: https://github.com/parallaxinc/BlocklyPropClient/issues

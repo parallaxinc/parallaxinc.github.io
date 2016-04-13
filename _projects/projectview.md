@@ -1,4 +1,5 @@
 ---
+layout: project
 title: projectview
 tagline: A dynamic project viewer for PropellerIDE
 image: https://raw.githubusercontent.com/parallaxinc/projectview/master/screenshots/search.png

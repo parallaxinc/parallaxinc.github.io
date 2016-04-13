@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Cloud-Session
 tagline: Session and Authentication system for cloud-compiled projects
+type: other
 links:
     Code: https://github.com/parallaxinc/Cloud-Session
     Issues: https://github.com/parallaxinc/Cloud-Session/issues

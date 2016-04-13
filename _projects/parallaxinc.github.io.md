@@ -1,6 +1,8 @@
 ---
+layout: project
 title: parallaxinc.github.io
 tagline: Source repository for developer.parallax.com
+type: other
 links:
     Code: https://github.com/parallaxinc/parallaxinc.github.io
     Issues: https://github.com/parallaxinc/parallaxinc.github.io/issues

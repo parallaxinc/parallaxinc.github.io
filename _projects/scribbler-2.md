@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Scribbler-2
 tagline: Scribbler (Windows) Development Environment
+type: other
 links:
     Code: https://github.com/parallaxinc/Scribbler-2
     Issues: https://github.com/parallaxinc/Scribbler-2/issues

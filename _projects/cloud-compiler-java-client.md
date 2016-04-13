@@ -1,6 +1,8 @@
 ---
+layout: project
 title: Cloud-Compiler-java-client
 tagline: 
+type: other
 links:
     Code: https://github.com/parallaxinc/Cloud-Compiler-java-client
     Issues: https://github.com/parallaxinc/Cloud-Compiler-java-client/issues

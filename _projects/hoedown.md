@@ -1,6 +1,8 @@
 ---
+layout: project
 title: hoedown
 tagline: Standards compliant, fast, secure markdown processing library in C
+type: other
 links:
     Code: https://github.com/parallaxinc/hoedown
     Releases: https://github.com/parallaxinc/hoedown/releases

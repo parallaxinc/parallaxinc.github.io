@@ -1,4 +1,5 @@
 ---
+layout: project
 title: PropWare
 tagline: C++ objects and CMake build system for Parallax Propeller
 image: https://github.com/parallaxinc/PropWare/raw/develop/docs/images/PropWare_Logo_64.png
