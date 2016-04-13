@@ -4,32 +4,28 @@ tagline: An easy-to-use, cross-platform IDE for the Parallax Propeller
 image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
 type: tools
 links:
-    Docs: /docs/propelleride/html
+    Docs: https://bweir.gitbooks.io/propelleride/content/
     Code: https://github.com/parallaxinc/PropellerIDE
     Issues: https://github.com/parallaxinc/PropellerIDE/issues
     Releases: https://github.com/parallaxinc/PropellerIDE/releases
-tag_name: 0.36.7
-tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.36.7
+tag_name: 0.37.0
+tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.37.0
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.7/propelleride-0.36.7-amd64.deb
-    file: propelleride-0.36.7-amd64.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.deb
+    file: propelleride-0.37.0-amd64.deb
 
   - name: OS X
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.7/propelleride-0.36.7-amd64.dmg
-    file: propelleride-0.36.7-amd64.dmg
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.dmg
+    file: propelleride-0.37.0-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.7/propelleride-0.36.7-amd64.exe
-    file: propelleride-0.36.7-amd64.exe
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.exe
+    file: propelleride-0.37.0-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.7/propelleride-0.36.7-amd64.run
-    file: propelleride-0.36.7-amd64.run
-
-  - name: Raspbian
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.36.7/propelleride-0.36.7-armhf.deb
-    file: propelleride-0.36.7-armhf.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.run
+    file: propelleride-0.37.0-amd64.run
 
 ---
 ![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)
