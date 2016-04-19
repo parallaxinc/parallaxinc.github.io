@@ -5,28 +5,24 @@ tagline: An easy-to-use, cross-platform IDE for the Parallax Propeller
 image: https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png
 type: tools
 links:
-    Docs: https://bweir.gitbooks.io/propelleride/content/
+    Docs: https://bweir.gitbooks.io/propelleride-docs/content/
     Code: https://github.com/parallaxinc/PropellerIDE
     Issues: https://github.com/parallaxinc/PropellerIDE/issues
     Releases: https://github.com/parallaxinc/PropellerIDE/releases
-tag_name: 0.37.0
-tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.37.0
+tag_name: 0.37.2
+tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.37.2
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.deb
-    file: propelleride-0.37.0-amd64.deb
-
-  - name: OS X
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.dmg
-    file: propelleride-0.37.0-amd64.dmg
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.2/propelleride-0.37.2-amd64.deb
+    file: propelleride-0.37.2-amd64.deb
 
   - name: Windows
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.exe
-    file: propelleride-0.37.0-amd64.exe
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.2/propelleride-0.37.2-amd64.exe
+    file: propelleride-0.37.2-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.0/propelleride-0.37.0-amd64.run
-    file: propelleride-0.37.0-amd64.run
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.2/propelleride-0.37.2-amd64.run
+    file: propelleride-0.37.2-amd64.run
 
 ---
 ![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)
@@ -49,8 +45,8 @@ PropellerIDE is a fun, easy, beautiful editor for the Propeller microcontroller.
 
 The PropellerIDE manual is available online and print formats:
 
-- Online: [HTML](https://bweir.gitbooks.io/propelleride/content/)
-- Printable formats: [PDF](https://www.gitbook.com/download/pdf/book/bweir/propelleride) | [ePub](https://www.gitbook.com/download/epub/book/bweir/propelleride) | [Mobi](https://www.gitbook.com/download/mobi/book/bweir/propelleride)
+- Online: [HTML](https://bweir.gitbooks.io/PropellerIDE-docs/content/)
+- Printable formats: [PDF](https://www.gitbook.com/download/pdf/book/bweir/PropellerIDE-docs) | [ePub](https://www.gitbook.com/download/epub/book/bweir/PropellerIDE-docs) | [Mobi](https://www.gitbook.com/download/mobi/book/bweir/PropellerIDE-docs)
 
 ## License
 
