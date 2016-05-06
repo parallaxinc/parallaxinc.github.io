@@ -12,24 +12,24 @@ links:
     Calibration and Tuning Guide: http://learn.parallax.com/calibrating-and-performance-tuning-your-elev-8-v3
     Elev8-V3 Quadcopter: https://www.parallax.com/product/80300
     Issues: https://github.com/parallaxinc/Flight-Controller/issues
-tag_name: 1.0.3
-tag_url:  https://github.com/parallaxinc/Flight-Controller/releases/tag/1.0.3
+tag_name: 1.0.4
+tag_url:  https://github.com/parallaxinc/Flight-Controller/releases/tag/1.0.4
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.deb
-    file: parallax-groundstation-1.0.3-amd64.deb
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.4/parallax-groundstation-1.0.4-amd64.deb
+    file: parallax-groundstation-1.0.4-amd64.deb
 
   - name: OS X
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.dmg
-    file: parallax-groundstation-1.0.3-amd64.dmg
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.4/parallax-groundstation-1.0.4-amd64.dmg
+    file: parallax-groundstation-1.0.4-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.exe
-    file: parallax-groundstation-1.0.3-amd64.exe
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.4/parallax-groundstation-1.0.4-amd64.exe
+    file: parallax-groundstation-1.0.4-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.3/parallax-groundstation-1.0.3-amd64.run
-    file: parallax-groundstation-1.0.3-amd64.run
+    link: https://github.com/parallaxinc/Flight-Controller/releases/download/1.0.4/parallax-groundstation-1.0.4-amd64.run
+    file: parallax-groundstation-1.0.4-amd64.run
 
 ---
 # Elev8 Flight Controller

@@ -19,8 +19,15 @@ All services are provided as rest services that return json. They should not be 
 
 
 ## Manuals
-### Building
-As this is a maven project, all dependencies will be downloaded by maven. To create a war file execute **mvn clean package** in the root directory.
+### Installation
+Preferably in a virtualenv:
+pip install -r requirements.txt
+
+In case you get: EnvironmentError: mysql_config not found
+sudo apt-get install libmysqlclient-dev
+
+In case you get: /usr/bin/ld: cannot find -lz
+sudo apt-get install zlib1g-dev
 
 ### Mysql setup
 Create a schema and if wanted a user and import the [table definitions](cloudsession-schema.sql).

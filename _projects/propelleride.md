@@ -9,20 +9,24 @@ links:
     Code: https://github.com/parallaxinc/PropellerIDE
     Issues: https://github.com/parallaxinc/PropellerIDE/issues
     Releases: https://github.com/parallaxinc/PropellerIDE/releases
-tag_name: 0.37.2
-tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.37.2
+tag_name: 0.37.3
+tag_url:  https://github.com/parallaxinc/PropellerIDE/releases/tag/0.37.3
 platforms:
   - name: Ubuntu
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.2/propelleride-0.37.2-amd64.deb
-    file: propelleride-0.37.2-amd64.deb
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.deb
+    file: propelleride-0.37.3-amd64.deb
+
+  - name: OS X
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.dmg
+    file: propelleride-0.37.3-amd64.dmg
 
   - name: Windows
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.2/propelleride-0.37.2-amd64.exe
-    file: propelleride-0.37.2-amd64.exe
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.exe
+    file: propelleride-0.37.3-amd64.exe
 
   - name: Linux
-    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.2/propelleride-0.37.2-amd64.run
-    file: propelleride-0.37.2-amd64.run
+    link: https://github.com/parallaxinc/PropellerIDE/releases/download/0.37.3/propelleride-0.37.3-amd64.run
+    file: propelleride-0.37.3-amd64.run
 
 ---
 ![logo](https://github.com/parallaxinc/PropellerIDE/raw/master/icons/logo.png)
