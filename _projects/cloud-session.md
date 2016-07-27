@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Cloud-Session
-tagline: Session and Authentication system for cloud-compiled projects
+tagline: Server for managing user information, rate limiting and sending email
 type: other
 links:
     Code: https://github.com/parallaxinc/Cloud-Session

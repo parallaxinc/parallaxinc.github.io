@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Cloud-Compiler
-tagline: Cloud compiler for remote editing and downloading of Propeller GCC
+tagline: Server for compiling propeller c or spin code
 type: other
 links:
     Code: https://github.com/parallaxinc/Cloud-Compiler

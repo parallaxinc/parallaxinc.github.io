@@ -1,7 +1,7 @@
 ---
 layout: project
 title: BlocklyPropClient
-tagline: Client to compile and load projects from BlocklyProp 
+tagline: Client to provide access to the propeller for loading binaries and serial terminal
 type: other
 links:
     Code: https://github.com/parallaxinc/BlocklyPropClient
